@@ -1,0 +1,545 @@
+
+body{
+    width: 100vw;
+    margin: 0%;
+}
+
+/*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
+.headerBody{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 1;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.elementheader{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: black;
+}
+
+/*-----------------------------------------------------------------------------HOME--------------------------------------------------------------------------------------------------------------*/
+.home{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image:url(./image/backgroundhome.jpg);filter: grayscale(10%);
+    background-position: bottom;
+    background-size: cover;
+
+}
+/*.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.448) ;    
+    z-index: -1; 
+}*/
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.logo{
+    position:relative;
+    top: 150px;    
+}   
+
+.size{
+    height: 100px;
+    width: 100px;
+    margin-left: 160px;
+    display: inline-block;  
+    animation: rotation 15s linear infinite; 
+}
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tailletitre{
+    color: white;
+    font-size: 5em;
+    font-family: 'Noto Sans Display', sans-serif;
+    margin-bottom: 0;
+    margin-left: 160px;
+}
+
+.taillesoustitre{
+    color:rgb(155,155,155);
+    font-size: 2em;
+    font-family: 'Noto Sans Display', sans-serif;
+    margin-top: 0;
+    margin-left: 160px;
+}
+
+/*---------------------------------------------------------------------------PROFILE----------------------------------------------------------------------------------------------------------*/
+.profile{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.photoprofile{
+    height:500px;
+    width:500px;
+}
+
+.elementprofile{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.titreElementProfile{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 5em;
+    line-height: 1;
+}
+
+.descriptionProfile{
+    margin-top: 0;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 1.2em;
+
+}
+
+.elementprofile2{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+.boutton{
+    text-decoration: none;
+    display: block;
+    height: 45px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 1.1em;
+    color: white;
+    background-color: rgb(131,92,246);
+
+}
+
+.flecheBas{
+    display: block;
+    font-size: 1.5em;
+    margin-top: 3px;
+    margin-left: 5px;
+    transform: rotate(90deg);
+}
+.flecheDroite{
+    display: block;
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+/*--------------------------------------------------------------------------SERVICE---------------------------------------------------------------------------------------------------------*/
+.service{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titreService{
+    display: flex;
+    justify-content: center;
+
+}
+
+.titreservice{
+    color: white;
+    font-size: 4em;
+    font-family: 'Noto Sans Display', sans-serif ;
+}
+
+.imageService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    background-image: url(./image/bg.jpg);
+    background-position: center;
+    min-height: 400px;
+
+}
+
+.listeService{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.elementBlockService{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 20%;
+
+
+}
+
+.iconsService{
+    height: 60px;
+}
+
+.titreIconsService{
+    font-family: 'Noto Sans Display', sans-serif ;
+    color: white;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------------CLIENTS-------------------------------------------------------------------------------------------------------*/
+.clients{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreClients{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.titreclients{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 4em;
+    color: rgb(131,92,246);
+    
+}
+
+.texteclients{
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 1.1em;
+
+}
+
+.clientsdeux{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.imageCollaborateur{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 350px;
+    width: 400px;
+}
+
+.textecollaborateur{
+    color: white;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 1.5em;
+    white-space: pre;
+}
+/*---------------------------------------------------------------------------CITATION----------------------------------------------------------------------------------------------------*/
+.citation{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementCitation{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textecitation{
+    text-align: center;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 3em;
+    color: white;    
+}
+
+.elementCitationDeux{
+    color: rgb(63, 63, 63);
+    font-size: 2em;
+    font-family: 'Noto Sans Display', sans-serif ;
+}
+/*-----------------------------------------------------------------------EN SAVOIR PLUS------------------------------------------------------------------------------------------------*/
+.enSavoirPlus{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titreEnSavoirPlus{
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 2.5em;
+    color: rgb(131,92,246);
+    margin-top: 50px;
+}
+
+.soustitreEnSavoirPlus{
+    text-align: center;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 1.7em;
+}
+
+.description{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.descriptionEnSavoirPlus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 320px;
+}
+
+.titreElementDescription{
+    font-family: 'Noto Sans Display', sans-serif ;
+    text-align: end ;
+    font-size: 1.4em;
+    white-space: pre;
+    margin-bottom: 0%;
+    width: 100%;
+
+}
+
+.texteElementDescription{
+    font-family: 'Noto Sans Display', sans-serif ;
+    text-align: end;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 0%;
+}
+
+.imageElementDescription{
+    height: 100%;
+}
+
+.descriptionDeux{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imageElementDescriptionDeux{
+    height: 450px;
+    width: 700px;
+}
+
+.titreElementDescriptionDeux{
+    font-family: 'Noto Sans Display', sans-serif ;
+    text-align: justify;
+    font-size: 1.4em;
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+.texteElementDescriptionDeux{
+    font-family: 'Noto Sans Display', sans-serif ;
+    text-align: justify;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 0%;
+
+}
+
+.footerEnSavoirPlus{
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+
+
+}
+/*-----------------------------------------------------------------------CONTACTS-------------------------------------------------------------------------------------------------------------------*/
+.contacts{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.elementContacts{
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+}
+
+.titreContacts{
+    color:white;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 3em;
+    margin-top: 100px;
+
+}
+
+.imageElementContacts{
+    height: 450px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.texteElementContacts{
+    font-family: 'Noto Sans Display', sans-serif ;
+    color: rgb(110, 105, 105);
+    font-size: 2em;
+}
+
+.elementContactsDeux{
+    height: 420px;
+    width: 500px;
+    border: 5px solid white;
+    margin-top: 220px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prendreRdv{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 2.5em;
+    text-decoration: none;
+    color:white;
+    gap: 30px;
+}
+
+.logoCalender{
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    object-fit: none;
+    border-radius: 50%;
+    
+}
+
+.texteContact{
+    color: white;
+    font-family: 'Noto Sans Display', sans-serif ;
+    font-size: 2em;
+}
+
+.logoContacts{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.borderRondIcon{
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconTelephone{
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+}
+
+.consultezMesTarifs{
+    height: 120px;
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mesTarifs{
+    font-family: 'Noto Sans Display', sans-serif ;
+    color: white;
+    font-size: 1.7em;
+    display: flex;
+}
