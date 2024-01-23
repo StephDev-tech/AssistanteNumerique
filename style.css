@@ -2,6 +2,8 @@
 body{
     width: 100vw;
     margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
@@ -32,6 +34,29 @@ body{
     color: black;
 }
 
+@media  screen and (min-width: 420px) and (max-width: 490px) {
+    .elementheader{
+        font-size: 1.3em;
+    }
+
+    .headerBody{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media  screen and (min-width: 350px) and (max-width: 420px) {
+    .elementheader{
+        font-size: 1em;
+    }
+
+    .headerBody{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
 /*-----------------------------------------------------------------------------HOME--------------------------------------------------------------------------------------------------------------*/
 .home{
     min-height: 800px;
@@ -70,7 +95,7 @@ body{
     top: 150px;    
 }   
 
-.size{
+.sizeLogo{
     height: 100px;
     width: 100px;
     margin-left: 160px;
@@ -100,12 +125,371 @@ body{
     margin-left: 160px;
 }
 
+@media screen and (max-width: 1000px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 90px;
+    }
+    
+    .tailletitre{
+        font-size: 3.2em;
+        margin-left: 90px;
+    } 
+
+    .taillesoustitre{
+        font-size: 2em;
+        margin-left: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 880px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 90px;
+    }
+    
+    .tailletitre{
+        color: white;
+        font-size: 3.2em;
+        margin-left: 90px;
+    } 
+
+    .taillesoustitre{
+        font-size: 2em;
+        margin-top: 0;
+        margin-left: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 671px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 90px;
+    }
+    
+    .tailletitre{
+        font-size: 3.2em;
+        margin-bottom: 0;
+        margin-left: 90px;
+    } 
+
+    .taillesoustitre{
+        color:rgb(155,155,155);
+        font-size: 2em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-top: 0;
+        margin-left: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 610px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 90px;
+        display: inline-block;  
+        animation: rotation 15s linear infinite; 
+    }
+    
+    .tailletitre{
+        color: white;
+        font-size: 3em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-bottom: 0;
+        margin-left: 90px;
+    } 
+
+    .taillesoustitre{
+        color:rgb(155,155,155);
+        font-size: 1.9em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-top: 0;
+        margin-left: 90px;
+    }
+    
+}
+
+@media screen and (min-width:510px) and (max-width: 580px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 90px;
+        display: inline-block;  
+        animation: rotation 15s linear infinite; 
+    }
+    
+    .tailletitre{
+        color: white;
+        font-size: 2.9em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-bottom: 0;
+        margin-left: 90px;
+    } 
+
+    .taillesoustitre{
+        color:rgb(155,155,155);
+        font-size: 1.8em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-top: 0;
+        margin-left: 90px;
+    }
+}
+
+/*@media screen and (max-width: 560px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 90px;
+        display: inline-block;  
+        animation: rotation 15s linear infinite; 
+    }
+    
+    .tailletitre{
+        color: white;
+        font-size: 2.8em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-bottom: 0;
+        margin-left: 90px;
+    } 
+
+    .taillesoustitre{
+        color:rgb(155,155,155);
+        font-size: 1.7em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-top: 0;
+        margin-left: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 530px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 80px;
+        display: inline-block;  
+        animation: rotation 15s linear infinite; 
+    }
+    
+    .tailletitre{
+        color: white;
+        font-size: 2.7em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-bottom: 0;
+        margin-left: 80px;
+    } 
+
+    .taillesoustitre{
+        color:rgb(155,155,155);
+        font-size: 1.6em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-top: 0;
+        margin-left: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 510px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 70px;
+        display: inline-block;  
+        animation: rotation 15s linear infinite; 
+    }
+    
+    .tailletitre{
+        color: white;
+        font-size: 2.6em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-bottom: 0;
+        margin-left: 70px;
+    } 
+
+    .taillesoustitre{
+        color:rgb(155,155,155);
+        font-size: 1.5em;
+        font-family: 'Noto Sans Display', sans-serif;
+        margin-top: 0;
+        margin-left: 70px;
+    }
+    
+}*/
+
+@media screen and (min-width:370px) and (max-width: 490px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 50px;
+    }
+    
+    .tailletitre{
+        font-size: 2em;
+        margin-bottom: 0;
+        margin-left: 50px;
+    } 
+
+    .taillesoustitre{
+        font-size: 1.1em;
+        margin-top: 0;
+        margin-left: 50px;
+    }
+    
+}
+
+/*@media screen and (max-width: 475px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 50px;
+    }
+    
+    .tailletitre{
+        font-size: 2.4em;
+        margin-bottom: 0;
+        margin-left: 50px;
+    } 
+
+    .taillesoustitre{
+        font-size: 1.3em;
+        margin-top: 0;
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 40px;
+    }
+    
+    .tailletitre{
+        font-size: 2.3em;
+        margin-bottom: 0;
+        margin-left: 40px;
+    } 
+
+    .taillesoustitre{
+        font-size: 1.2em;
+        margin-top: 0;
+        margin-left: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+    }
+    
+    .tailletitre{
+        font-size: 2.2em;
+        margin-left: 30px;
+    } 
+
+    .taillesoustitre{
+        font-size: 1.1em;
+        margin-left: 30px;
+    }
+    
+}*/
+
+@media screen and (min-width:320px) and (max-width: 370px) {
+    .home{
+        min-height: 700px;
+    }
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+    }
+    
+    .tailletitre{
+        font-size: 1.9em;
+        margin-left: 30px;
+    } 
+
+    .taillesoustitre{
+        font-size: 0.9em;
+        margin-left: 30px;
+    }
+    
+}
+
+/*@media screen and (max-width: 355px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+    }
+    
+    .tailletitre{
+        font-size: 2em;
+        margin-left: 30px;
+    } 
+
+    .taillesoustitre{
+        font-size: 0.9em;
+        margin-left: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 345px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+    }
+    
+    .tailletitre{
+        font-size: 1.9em;
+        margin-left: 30px;
+    } 
+
+    .taillesoustitre{
+        font-size: 0.8em;
+        margin-left: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 330px) {
+    .sizeLogo{
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+    }
+    
+    .tailletitre{
+        font-size: 1.8em;
+        margin-left: 30px;
+    } 
+
+    .taillesoustitre{
+        font-size: 0.7em;
+        margin-left: 30px;
+    }
+    
+}*/
+
 /*---------------------------------------------------------------------------PROFILE----------------------------------------------------------------------------------------------------------*/
 .profile{
     min-height: 800px;
     width: 100vw;
     margin: 0%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -177,6 +561,7 @@ body{
     margin: 0%;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -270,6 +655,7 @@ body{
 
 .clientsdeux{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 20px;
@@ -296,6 +682,7 @@ body{
     margin: 0%;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -325,6 +712,7 @@ body{
     width: 100vw;
     margin: 0%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -352,6 +740,7 @@ body{
 
 .descriptionEnSavoirPlus{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
@@ -428,6 +817,7 @@ body{
     margin: 0%;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
