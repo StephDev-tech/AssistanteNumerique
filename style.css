@@ -1,32 +1,33 @@
-
-body{
+body {
     width: 100vw;
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
 }
 
+
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
-.headerBody{
+
+.headerBody {
     background-color: white;
     width: 100%;
     height: 50px;
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     z-index: 1;
 }
 
-.sidebar{
+.sidebar {
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
-.elementheader{
+.elementheader {
     margin-left: 10px;
     margin-right: 10px;
     text-decoration: none;
@@ -34,42 +35,43 @@ body{
     color: black;
 }
 
-@media  screen and (min-width: 420px) and (max-width: 490px) {
-    .elementheader{
+@media screen and (min-width: 420px) and (max-width: 490px) {
+    .elementheader {
         font-size: 1.3em;
     }
-
-    .headerBody{
+    .headerBody {
         display: flex;
         justify-content: space-evenly;
     }
-    
 }
 
-@media  screen and (min-width: 320px) and (max-width: 420px) {
-    .elementheader{
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .elementheader {
         font-size: 0.9em;
     }
-
-    .headerBody{
+    .headerBody {
         display: flex;
         justify-content: space-around;
     }
-    
 }
+
+
 /*-----------------------------------------------------------------------------HOME--------------------------------------------------------------------------------------------------------------*/
-.home{
+
+.home {
     min-height: 800px;
     width: 100vw;
     margin: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image:url(./image/backgroundhome.jpg);filter: grayscale(10%);
+    background-image: url(./image/backgroundhome.jpg);
+    filter: grayscale(10%);
     background-position: bottom;
     background-size: cover;
-
 }
+
+
 /*.home::before {
     content: "";
     position: absolute;
@@ -83,33 +85,33 @@ body{
 
 @keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
-.logo{
-    position:relative;
-    top: 150px;    
-}   
+.logo {
+    position: relative;
+    top: 150px;
+}
 
-.sizeLogo{
+.sizeLogo {
     height: 100px;
     width: 100px;
     margin-left: 160px;
-    display: inline-block;  
-    animation: rotation 15s linear infinite; 
+    display: inline-block;
+    animation: rotation 15s linear infinite;
 }
 
-.titre{
+.titre {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.tailletitre{
+.tailletitre {
     color: white;
     font-size: 5em;
     font-family: 'Noto Sans Display', sans-serif;
@@ -118,8 +120,8 @@ body{
     margin-right: 160px;
 }
 
-.taillesoustitre{
-    color:rgb(155,155,155);
+.taillesoustitre {
+    color: rgb(155, 155, 155);
     font-size: 2em;
     font-family: 'Noto Sans Display', sans-serif;
     margin-top: 0;
@@ -127,60 +129,47 @@ body{
     margin-right: 160px;
 }
 
-
-
-
 @media screen and (max-width: 900px) {
-    .sizeLogo{
+    .sizeLogo {
         margin-left: 10px;
     }
-    
-    .tailletitre{
-        margin-left: 10px;
-        margin-right: 10px;
-
-    } 
-
-    .taillesoustitre{
+    .tailletitre {
         margin-left: 10px;
         margin-right: 10px;
     }
-    
+    .taillesoustitre {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 400px) {
-    .sizeLogo{
+    .sizeLogo {
         margin-left: 10px;
     }
-    
-    .tailletitre{
+    .tailletitre {
         margin-left: 10px;
         margin-right: 10px;
         font-size: 3em;
-
-
-    } 
-
-    .taillesoustitre{
+    }
+    .taillesoustitre {
         margin-left: 10px;
         margin-right: 10px;
         font-size: 2em;
-
-
     }
-    
-    .logo{
-        position:relative;
-        top: 100px;    
-    }    
-
+    .logo {
+        position: relative;
+        top: 100px;
+    }
+    .home {
+        min-height: 600px;
+    }
 }
 
 
-
-
 /*---------------------------------------------------------------------------PROFILE----------------------------------------------------------------------------------------------------------*/
-.profile{
+
+.profile {
     min-height: 800px;
     width: 100vw;
     margin: 0%;
@@ -189,41 +178,37 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
 
-.photoprofile{
-    height:500px;
-    width:500px;
+.photoprofile {
+    height: 500px;
+    width: 500px;
 }
 
-.elementprofile{
+.elementprofile {
     display: flex;
     flex-direction: column;
-  
 }
 
-.titreElementProfile{
+.titreElementProfile {
     font-family: 'Noto Sans', sans-serif;
     font-size: 5em;
     line-height: 1;
 }
 
-.descriptionProfile{
+.descriptionProfile {
     margin-top: 0;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.2em;
-
 }
 
-.elementprofile2{
+.elementprofile2 {
     display: flex;
     flex-direction: row;
     gap: 40px;
-
 }
 
-.boutton{
+.boutton {
     text-decoration: none;
     display: block;
     height: 45px;
@@ -231,28 +216,30 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.1em;
     color: white;
-    background-color: rgb(131,92,246);
-
+    background-color: rgb(131, 92, 246);
 }
 
-.flecheBas{
+.flecheBas {
     display: block;
     font-size: 1.5em;
     margin-top: 3px;
     margin-left: 5px;
     transform: rotate(90deg);
 }
-.flecheDroite{
+
+.flecheDroite {
     display: block;
     font-size: 1.5em;
     margin-left: 5px;
 }
 
+
 /*--------------------------------------------------------------------------SERVICE---------------------------------------------------------------------------------------------------------*/
-.service{
+
+.service {
     min-height: 800px;
     width: 100vw;
     margin: 0%;
@@ -263,19 +250,18 @@ body{
     align-items: center;
 }
 
-.titreService{
+.titreService {
     display: flex;
     justify-content: center;
-
 }
 
-.titreservice{
+.titreservice {
     color: white;
     font-size: 4em;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
 }
 
-.imageService{
+.imageService {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,38 +270,37 @@ body{
     background-image: url(./image/bg.jpg);
     background-position: center;
     min-height: 400px;
-
 }
 
-.listeService{
+.listeService {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.elementBlockService{
+.elementBlockService {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
     width: 20%;
-
-
 }
 
-.iconsService{
+.iconsService {
     height: 60px;
 }
 
-.titreIconsService{
-    font-family: 'Noto Sans Display', sans-serif ;
+.titreIconsService {
+    font-family: 'Noto Sans Display', sans-serif;
     color: white;
     text-align: center;
 }
 
+
 /*--------------------------------------------------------------------------CLIENTS-------------------------------------------------------------------------------------------------------*/
-.clients{
+
+.clients {
     min-height: 800px;
     width: 100vw;
     margin: 0%;
@@ -323,7 +308,7 @@ body{
     flex-direction: column;
 }
 
-.titreClients{
+.titreClients {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -332,25 +317,23 @@ body{
     margin-left: 70px;
 }
 
-.titreclients{
+.titreclients {
     display: flex;
     justify-content: center;
     margin-bottom: 0%;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 4em;
-    color: rgb(131,92,246);
-    
+    color: rgb(131, 92, 246);
 }
 
-.texteclients{
+.texteclients {
     display: flex;
     justify-content: center;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.1em;
-
 }
 
-.clientsdeux{
+.clientsdeux {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -358,7 +341,7 @@ body{
     margin-top: 20px;
 }
 
-.imageCollaborateur{
+.imageCollaborateur {
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -366,14 +349,17 @@ body{
     width: 400px;
 }
 
-.textecollaborateur{
+.textecollaborateur {
     color: white;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.5em;
     white-space: pre;
 }
+
+
 /*---------------------------------------------------------------------------CITATION----------------------------------------------------------------------------------------------------*/
-.citation{
+
+.citation {
     min-height: 800px;
     width: 100vw;
     margin: 0%;
@@ -384,27 +370,30 @@ body{
     align-items: center;
 }
 
-.elementCitation{
+.elementCitation {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
 }
 
-.textecitation{
+.textecitation {
     text-align: center;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 3em;
-    color: white;    
+    color: white;
 }
 
-.elementCitationDeux{
+.elementCitationDeux {
     color: rgb(63, 63, 63);
     font-size: 2em;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
 }
+
+
 /*-----------------------------------------------------------------------EN SAVOIR PLUS------------------------------------------------------------------------------------------------*/
-.enSavoirPlus{
+
+.enSavoirPlus {
     min-height: 800px;
     width: 100vw;
     margin: 0%;
@@ -413,29 +402,29 @@ body{
     flex-direction: column;
 }
 
-.titreEnSavoirPlus{
+.titreEnSavoirPlus {
     display: flex;
     justify-content: center;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 2.5em;
-    color: rgb(131,92,246);
+    color: rgb(131, 92, 246);
     margin-top: 50px;
 }
 
-.soustitreEnSavoirPlus{
+.soustitreEnSavoirPlus {
     text-align: center;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.7em;
 }
 
-.description{
+.description {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.descriptionEnSavoirPlus{
+.descriptionEnSavoirPlus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -444,29 +433,28 @@ body{
     width: 320px;
 }
 
-.titreElementDescription{
-    font-family: 'Noto Sans Display', sans-serif ;
-    text-align: end ;
+.titreElementDescription {
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: end;
     font-size: 1.4em;
     white-space: pre;
     margin-bottom: 0%;
     width: 100%;
-
 }
 
-.texteElementDescription{
-    font-family: 'Noto Sans Display', sans-serif ;
+.texteElementDescription {
+    font-family: 'Noto Sans Display', sans-serif;
     text-align: end;
     font-size: 1.2em;
     width: 100%;
     margin-top: 0%;
 }
 
-.imageElementDescription{
+.imageElementDescription {
     height: 100%;
 }
 
-.descriptionDeux{
+.descriptionDeux {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -474,41 +462,41 @@ body{
     width: 100%;
 }
 
-.imageElementDescriptionDeux{
+.imageElementDescriptionDeux {
     height: 450px;
     width: 700px;
 }
 
-.titreElementDescriptionDeux{
-    font-family: 'Noto Sans Display', sans-serif ;
+.titreElementDescriptionDeux {
+    font-family: 'Noto Sans Display', sans-serif;
     text-align: justify;
     font-size: 1.4em;
     margin-bottom: 0%;
     width: 100%;
 }
 
-.texteElementDescriptionDeux{
-    font-family: 'Noto Sans Display', sans-serif ;
+.texteElementDescriptionDeux {
+    font-family: 'Noto Sans Display', sans-serif;
     text-align: justify;
     font-size: 1.2em;
     width: 100%;
     margin-top: 0%;
-
 }
 
-.footerEnSavoirPlus{
-    font-family: 'Noto Sans Display', sans-serif ;
+.footerEnSavoirPlus {
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 2em;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin-top: 50px;
-
-
 }
+
+
 /*-----------------------------------------------------------------------CONTACTS-------------------------------------------------------------------------------------------------------------------*/
-.contacts{
+
+.contacts {
     min-height: 800px;
     width: 100vw;
     margin: 0%;
@@ -518,33 +506,32 @@ body{
     flex-direction: row;
 }
 
-.elementContacts{
+.elementContacts {
     display: flex;
     flex-direction: column;
     margin-left: 160px;
 }
 
-.titreContacts{
-    color:white;
-    font-family: 'Noto Sans Display', sans-serif ;
+.titreContacts {
+    color: white;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 3em;
     margin-top: 100px;
-
 }
 
-.imageElementContacts{
+.imageElementContacts {
     height: 450px;
     width: 600px;
     border-radius: 15px;
 }
 
-.texteElementContacts{
-    font-family: 'Noto Sans Display', sans-serif ;
+.texteElementContacts {
+    font-family: 'Noto Sans Display', sans-serif;
     color: rgb(110, 105, 105);
     font-size: 2em;
 }
 
-.elementContactsDeux{
+.elementContactsDeux {
     height: 420px;
     width: 500px;
     border: 5px solid white;
@@ -555,40 +542,39 @@ body{
     align-items: center;
 }
 
-.prendreRdv{
+.prendreRdv {
     display: block;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 2.5em;
     text-decoration: none;
-    color:white;
+    color: white;
     gap: 30px;
 }
 
-.logoCalender{
+.logoCalender {
     height: 50px;
     width: 50px;
     border: 3px solid white;
     object-fit: none;
     border-radius: 50%;
-    
 }
 
-.texteContact{
+.texteContact {
     color: white;
-    font-family: 'Noto Sans Display', sans-serif ;
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 2em;
 }
 
-.logoContacts{
+.logoContacts {
     display: flex;
     flex-direction: row;
     gap: 45px;
 }
 
-.icon{
+.icon {
     height: 50px;
     width: 50px;
     border: 1px solid white;
@@ -596,7 +582,7 @@ body{
     border-radius: 50%;
 }
 
-.borderRondIcon{
+.borderRondIcon {
     height: 50px;
     width: 50px;
     border: 3px solid white;
@@ -606,13 +592,13 @@ body{
     align-items: center;
 }
 
-.iconTelephone{
+.iconTelephone {
     height: 35px;
     width: 35px;
     object-fit: contain;
 }
 
-.consultezMesTarifs{
+.consultezMesTarifs {
     height: 120px;
     width: 90%;
     border: 2px solid white;
@@ -624,8 +610,8 @@ body{
     align-items: center;
 }
 
-.mesTarifs{
-    font-family: 'Noto Sans Display', sans-serif ;
+.mesTarifs {
+    font-family: 'Noto Sans Display', sans-serif;
     color: white;
     font-size: 1.7em;
     display: flex;
