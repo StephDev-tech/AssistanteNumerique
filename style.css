@@ -46,14 +46,14 @@ body{
     
 }
 
-@media  screen and (min-width: 350px) and (max-width: 420px) {
+@media  screen and (min-width: 320px) and (max-width: 420px) {
     .elementheader{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .headerBody{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
 }
@@ -115,6 +115,7 @@ body{
     font-family: 'Noto Sans Display', sans-serif;
     margin-bottom: 0;
     margin-left: 160px;
+    margin-right: 160px;
 }
 
 .taillesoustitre{
@@ -123,365 +124,60 @@ body{
     font-family: 'Noto Sans Display', sans-serif;
     margin-top: 0;
     margin-left: 160px;
+    margin-right: 160px;
 }
 
-@media screen and (max-width: 1000px) {
+
+
+
+@media screen and (max-width: 900px) {
     .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 90px;
+        margin-left: 10px;
     }
     
     .tailletitre{
-        font-size: 3.2em;
-        margin-left: 90px;
+        margin-left: 10px;
+        margin-right: 10px;
+
     } 
 
     .taillesoustitre{
-        font-size: 2em;
-        margin-left: 90px;
-    }
-    
-}
-
-@media screen and (max-width: 880px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 90px;
-    }
-    
-    .tailletitre{
-        color: white;
-        font-size: 3.2em;
-        margin-left: 90px;
-    } 
-
-    .taillesoustitre{
-        font-size: 2em;
-        margin-top: 0;
-        margin-left: 90px;
-    }
-    
-}
-
-@media screen and (max-width: 671px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 90px;
-    }
-    
-    .tailletitre{
-        font-size: 3.2em;
-        margin-bottom: 0;
-        margin-left: 90px;
-    } 
-
-    .taillesoustitre{
-        color:rgb(155,155,155);
-        font-size: 2em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-top: 0;
-        margin-left: 90px;
-    }
-    
-}
-
-@media screen and (max-width: 610px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 90px;
-        display: inline-block;  
-        animation: rotation 15s linear infinite; 
-    }
-    
-    .tailletitre{
-        color: white;
-        font-size: 3em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-bottom: 0;
-        margin-left: 90px;
-    } 
-
-    .taillesoustitre{
-        color:rgb(155,155,155);
-        font-size: 1.9em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-top: 0;
-        margin-left: 90px;
-    }
-    
-}
-
-@media screen and (min-width:510px) and (max-width: 580px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 90px;
-        display: inline-block;  
-        animation: rotation 15s linear infinite; 
-    }
-    
-    .tailletitre{
-        color: white;
-        font-size: 2.9em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-bottom: 0;
-        margin-left: 90px;
-    } 
-
-    .taillesoustitre{
-        color:rgb(155,155,155);
-        font-size: 1.8em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-top: 0;
-        margin-left: 90px;
-    }
-}
-
-/*@media screen and (max-width: 560px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 90px;
-        display: inline-block;  
-        animation: rotation 15s linear infinite; 
-    }
-    
-    .tailletitre{
-        color: white;
-        font-size: 2.8em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-bottom: 0;
-        margin-left: 90px;
-    } 
-
-    .taillesoustitre{
-        color:rgb(155,155,155);
-        font-size: 1.7em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-top: 0;
-        margin-left: 90px;
-    }
-    
-}
-
-@media screen and (max-width: 530px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 80px;
-        display: inline-block;  
-        animation: rotation 15s linear infinite; 
-    }
-    
-    .tailletitre{
-        color: white;
-        font-size: 2.7em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-bottom: 0;
-        margin-left: 80px;
-    } 
-
-    .taillesoustitre{
-        color:rgb(155,155,155);
-        font-size: 1.6em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-top: 0;
-        margin-left: 80px;
-    }
-    
-}
-
-@media screen and (max-width: 510px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 70px;
-        display: inline-block;  
-        animation: rotation 15s linear infinite; 
-    }
-    
-    .tailletitre{
-        color: white;
-        font-size: 2.6em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-bottom: 0;
-        margin-left: 70px;
-    } 
-
-    .taillesoustitre{
-        color:rgb(155,155,155);
-        font-size: 1.5em;
-        font-family: 'Noto Sans Display', sans-serif;
-        margin-top: 0;
-        margin-left: 70px;
-    }
-    
-}*/
-
-@media screen and (min-width:370px) and (max-width: 490px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 50px;
-    }
-    
-    .tailletitre{
-        font-size: 2em;
-        margin-bottom: 0;
-        margin-left: 50px;
-    } 
-
-    .taillesoustitre{
-        font-size: 1.1em;
-        margin-top: 0;
-        margin-left: 50px;
-    }
-    
-}
-
-/*@media screen and (max-width: 475px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 50px;
-    }
-    
-    .tailletitre{
-        font-size: 2.4em;
-        margin-bottom: 0;
-        margin-left: 50px;
-    } 
-
-    .taillesoustitre{
-        font-size: 1.3em;
-        margin-top: 0;
-        margin-left: 50px;
-    }
-    
-}
-
-@media screen and (max-width: 420px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 40px;
-    }
-    
-    .tailletitre{
-        font-size: 2.3em;
-        margin-bottom: 0;
-        margin-left: 40px;
-    } 
-
-    .taillesoustitre{
-        font-size: 1.2em;
-        margin-top: 0;
-        margin-left: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     
 }
 
 @media screen and (max-width: 400px) {
     .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     
     .tailletitre{
-        font-size: 2.2em;
-        margin-left: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 3em;
+
+
     } 
 
     .taillesoustitre{
-        font-size: 1.1em;
-        margin-left: 30px;
-    }
-    
-}*/
-
-@media screen and (min-width:320px) and (max-width: 370px) {
-    .home{
-        min-height: 700px;
-    }
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 30px;
-    }
-    
-    .tailletitre{
-        font-size: 1.9em;
-        margin-left: 30px;
-    } 
-
-    .taillesoustitre{
-        font-size: 0.9em;
-        margin-left: 30px;
-    }
-    
-}
-
-/*@media screen and (max-width: 355px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 30px;
-    }
-    
-    .tailletitre{
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 2em;
-        margin-left: 30px;
-    } 
 
-    .taillesoustitre{
-        font-size: 0.9em;
-        margin-left: 30px;
+
     }
     
+    .logo{
+        position:relative;
+        top: 100px;    
+    }    
+
 }
 
-@media screen and (max-width: 345px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 30px;
-    }
-    
-    .tailletitre{
-        font-size: 1.9em;
-        margin-left: 30px;
-    } 
 
-    .taillesoustitre{
-        font-size: 0.8em;
-        margin-left: 30px;
-    }
-    
-}
 
-@media screen and (max-width: 330px) {
-    .sizeLogo{
-        height: 100px;
-        width: 100px;
-        margin-left: 30px;
-    }
-    
-    .tailletitre{
-        font-size: 1.8em;
-        margin-left: 30px;
-    } 
-
-    .taillesoustitre{
-        font-size: 0.7em;
-        margin-left: 30px;
-    }
-    
-}*/
 
 /*---------------------------------------------------------------------------PROFILE----------------------------------------------------------------------------------------------------------*/
 .profile{
@@ -554,6 +250,7 @@ body{
     font-size: 1.5em;
     margin-left: 5px;
 }
+
 /*--------------------------------------------------------------------------SERVICE---------------------------------------------------------------------------------------------------------*/
 .service{
     min-height: 800px;
