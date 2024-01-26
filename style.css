@@ -422,10 +422,10 @@ body {
 
 @media screen and (max-width: 500px) {
     .titreClients {
-        margin: 15px;
+        margin: 10px;
     }
     .titreclients {
-        font-size: 2.3em;
+        font-size: 2em;
     }
     .texteclients {
         font-size: 0.9em;
@@ -435,7 +435,7 @@ body {
     }
     .imageCollaborateur {
         height: 270px;
-        width: 300px;
+        width: 100%;
     }
 
     .textecollaborateur{
