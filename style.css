@@ -10,12 +10,6 @@ body {
     overflow: scroll;
 }
 
-@media screen and (max-width: 900px) {
-    body {
-        flex-direction: column-reverse;
-    }
-}
-
 
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
 
@@ -52,6 +46,7 @@ body {
     .sidebar {
         width: 100%;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 
@@ -309,6 +304,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .elementBlockService {
@@ -327,6 +323,19 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     color: white;
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .imageService {
+        width: 100%;
+    }
+    .titreservice {
+        font-size: 2em;
+        text-align: center;
+    }
+    .listeService {
+        flex-direction: column;
+    }
 }
 
 
@@ -464,22 +473,21 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
 }
 
-@media screen and (max-width: 1185px){
-    .textecitation{
-        font-size:2.5em;
+@media screen and (max-width: 1185px) {
+    .textecitation {
+        font-size: 2.5em;
         text-align: center;
     }
 }
 
-@media screen and (max-width: 500px){
-    .textecitation{
+@media screen and (max-width: 500px) {
+    .textecitation {
         font-size: 2em;
-        margin:10px;
+        margin: 10px;
     }
-
-    .elementCitationDeux{
+    .elementCitationDeux {
         font-size: 1.3em;
-        margin:10px;
+        margin: 10px;
     }
 }
 
@@ -586,70 +594,58 @@ body {
     margin-top: 50px;
 }
 
-@media screen and (max-width: 1216px){
-    .elementEnSavoirPlus{
+@media screen and (max-width: 1216px) {
+    .elementEnSavoirPlus {
         margin: 10px;
     }
-
-    .titreEnSavoirPlus{
-        font-size:2em;
+    .titreEnSavoirPlus {
+        font-size: 2em;
         text-align: center;
     }
-
-    .soustitreEnSavoirPlus{
+    .soustitreEnSavoirPlus {
         font-size: 1.1em;
         text-align: center;
     }
-
-    .description{
+    .description {
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 5px;
     }
-
-    .descriptionDeux{
+    .descriptionDeux {
         flex-direction: column;
     }
-
     .titreElementDescriptionDeux {
         font-size: 1.6em;
         text-align: center;
     }
-
     .texteElementDescriptionDeux {
         font-size: 1em;
         text-align: center;
     }
-
-    .footerEnSavoirPlus{
+    .footerEnSavoirPlus {
         font-size: 1.3em;
         text-align: center;
         margin-bottom: 15px;
     }
-
 }
 
 @media screen and (max-width: 500px) {
-    .descriptionDeux{
+    .descriptionDeux {
         margin-right: 9px;
     }
-
-    .imageElementDescriptionDeux{
+    .imageElementDescriptionDeux {
         height: 350px;
         width: 450px;
     }
-    
     .titreElementDescriptionDeux {
         font-size: 1.2em;
         text-align: center;
     }
-
     .texteElementDescriptionDeux {
         font-size: 0.9em;
         text-align: center;
     }
-
-    .footerEnSavoirPlus{
+    .footerEnSavoirPlus {
         font-size: 1em;
         text-align: center;
         margin-bottom: 15px;
@@ -657,33 +653,28 @@ body {
     }
 }
 
-@media screen and (max-width:400px){
-    .enSavoirPlus{
+@media screen and (max-width:400px) {
+    .enSavoirPlus {
         margin: 0px;
     }
-
-    .elementEnSavoirPlus{
+    .elementEnSavoirPlus {
         width: 100%;
     }
-    .titreEnSavoirPlus{
-        font-size:1.5em;
+    .titreEnSavoirPlus {
+        font-size: 1.5em;
         text-align: center;
     }
-
-    .soustitreEnSavoirPlus{
+    .soustitreEnSavoirPlus {
         font-size: 0.9em;
         text-align: center;
     }
-
-    .descriptionEnSavoirPlus{
+    .descriptionEnSavoirPlus {
         width: 100%;
     }
-
     .titreElementDescription {
         font-size: 1.05em;
         margin-right: 10px;
     }
-
     .texteElementDescription {
         font-size: 1em;
         width: 100%;
