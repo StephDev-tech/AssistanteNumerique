@@ -630,12 +630,13 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .descriptionDeux {
-        margin-right: 9px;
+    .imageElementDescription {
+        height: auto;
+        width: 100%;
     }
     .imageElementDescriptionDeux {
-        height: 350px;
-        width: 450px;
+        height: auto;
+        width: 100%;
     }
     .titreElementDescriptionDeux {
         font-size: 1.2em;
