@@ -328,8 +328,6 @@ body {
     color: white;
     text-align: center;
 }
-
-
 /*--------------------------------------------------------------------------CLIENTS-------------------------------------------------------------------------------------------------------*/
 
 .clients {
@@ -356,6 +354,7 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 4em;
     color: rgb(131, 92, 246);
+    text-align: start;
 }
 
 .texteclients {
@@ -379,6 +378,8 @@ body {
     background-color: black;
     height: 350px;
     width: 400px;
+    margin: 20px;
+    margin-bottom: 40px;
 }
 
 .textecollaborateur {
@@ -386,6 +387,53 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.5em;
     white-space: pre;
+}
+
+@media screen and (max-width: 1320px){
+    .titreClients{
+        margin-left: 50px;
+    }
+
+    .titreclients{
+        font-size: 3.5em;
+    }
+
+    .texteclients{
+        font-size: 1em;
+    }
+
+    .imageCollaborateur{
+        height:300px;
+        width:330px;
+    }
+
+    .clientsdeux{
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .titreClients{
+        margin: 15px;
+    }
+
+    .titreclients{
+        font-size: 2.3em;
+    }
+
+    .texteclients{
+        font-size: 0.9em;
+    }
+
+    .clientsdeux{
+        margin:10px
+    }
+
+    .imageCollaborateur{
+        height: 270px;
+        width: 300px;
+    }
 }
 
 
