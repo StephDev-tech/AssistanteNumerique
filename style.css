@@ -1,5 +1,5 @@
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
@@ -436,6 +436,10 @@ body {
     .imageCollaborateur {
         height: 270px;
         width: 300px;
+    }
+
+    .textecollaborateur{
+        font-size: 1.2em;
     }
 }
 
