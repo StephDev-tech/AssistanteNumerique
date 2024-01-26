@@ -328,6 +328,8 @@ body {
     color: white;
     text-align: center;
 }
+
+
 /*--------------------------------------------------------------------------CLIENTS-------------------------------------------------------------------------------------------------------*/
 
 .clients {
@@ -389,48 +391,40 @@ body {
     white-space: pre;
 }
 
-@media screen and (max-width: 1320px){
-    .titreClients{
+@media screen and (max-width: 1320px) {
+    .titreClients {
         margin-left: 50px;
     }
-
-    .titreclients{
+    .titreclients {
         font-size: 3.5em;
     }
-
-    .texteclients{
+    .texteclients {
         font-size: 1em;
     }
-
-    .imageCollaborateur{
-        height:300px;
-        width:330px;
+    .imageCollaborateur {
+        height: 300px;
+        width: 330px;
     }
-
-    .clientsdeux{
+    .clientsdeux {
         justify-content: space-evenly;
         margin-top: 60px;
     }
 }
 
-@media screen and (max-width: 500px){
-    .titreClients{
+@media screen and (max-width: 500px) {
+    .titreClients {
         margin: 15px;
     }
-
-    .titreclients{
+    .titreclients {
         font-size: 2.3em;
     }
-
-    .texteclients{
+    .texteclients {
         font-size: 0.9em;
     }
-
-    .clientsdeux{
-        margin:10px
+    .clientsdeux {
+        margin: 10px
     }
-
-    .imageCollaborateur{
+    .imageCollaborateur {
         height: 270px;
         width: 300px;
     }
@@ -707,12 +701,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .elementContacts {
     display: flex;
     flex-direction: column;
-    margin-left: 160px;
+    width: 40%;
 }
 
 .titreContacts {
@@ -723,9 +719,7 @@ body {
 }
 
 .imageElementContacts {
-    height: 450px;
-    width: 600px;
-    border-radius: 15px;
+    width: 100%;
 }
 
 .texteElementContacts {
@@ -735,11 +729,9 @@ body {
 }
 
 .elementContactsDeux {
-    height: 420px;
-    width: 500px;
+    width: 35%;
     border: 5px solid white;
-    margin-top: 220px;
-    margin-left: 100px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -750,6 +742,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 2.5em;
     text-decoration: none;
@@ -802,15 +796,15 @@ body {
 }
 
 .consultezMesTarifs {
-    height: 120px;
-    width: 90%;
+    width: 80%;
     border: 2px solid white;
     border-radius: 50px;
     margin-top: 38px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .mesTarifs {
@@ -818,4 +812,21 @@ body {
     color: white;
     font-size: 1.7em;
     display: flex;
+    margin: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .elementContacts {
+        width: 80%;
+    }
+    .elementContactsDeux {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .elementContactsDeux {
+        border: none;
+    }
 }
