@@ -437,8 +437,7 @@ body {
         height: 270px;
         width: 100%;
     }
-
-    .textecollaborateur{
+    .textecollaborateur {
         font-size: 1.2em;
     }
 }
@@ -655,6 +654,9 @@ body {
         text-align: center;
         margin-bottom: 15px;
         margin-right: 10px;
+    }
+    .texteElementDescription {
+        margin: 0%;
     }
 }
 
