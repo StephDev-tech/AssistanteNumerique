@@ -268,8 +268,6 @@ body {
         font-size: 0.9em;
     }
 }
-
-
 /*--------------------------------------------------------------------------SERVICE---------------------------------------------------------------------------------------------------------*/
 
 .service {
@@ -437,14 +435,19 @@ body {
         font-size: 0.9em;
     }
     .clientsdeux {
-        margin: 10px
+        margin: 10px;
+        height: auto;
     }
     .imageCollaborateur {
-        height: 270px;
         width: 100%;
+        background-color: initial;
     }
     .textecollaborateur {
         font-size: 1.2em;
+        height: 50px;
+        display: block;
+        background-color: black;
+        margin: 0%;
     }
 }
 
