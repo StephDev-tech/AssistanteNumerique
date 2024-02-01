@@ -1,28 +1,15 @@
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
-}
-
-.main {
-    height: 94vh;
-    overflow: scroll;
-}
-
-@media screen and (max-width: 900px) {
-    body {
-        flex-direction: column-reverse;
-    }
 }
 
 
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
 
 .headerBody {
-    background-color: white;
     width: 100%;
-    height: 6vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -35,9 +22,11 @@ body {
 }
 
 .sidebar {
+    min-height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .elementheader {
@@ -50,8 +39,12 @@ body {
 
 @media screen and (max-width: 900px) {
     .sidebar {
+        position: fixed;
+        bottom: 0;
         width: 100%;
         justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: white;
     }
 }
 
@@ -253,13 +246,17 @@ body {
 
 @media screen and (max-width: 460px) {
     .titreElementProfile {
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .elementprofile {
-        margin-left: 15px;
+        margin: 10px;
     }
     .descriptionProfile {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+    .elementprofile2 {
+        gap: 0px;
+        justify-content: space-around;
     }
     .boutton {
         height: 45px;
@@ -309,6 +306,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .elementBlockService {
@@ -327,6 +325,19 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     color: white;
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .imageService {
+        width: 100%;
+    }
+    .titreservice {
+        font-size: 2em;
+        text-align: center;
+    }
+    .listeService {
+        flex-direction: column;
+    }
 }
 
 
@@ -413,20 +424,28 @@ body {
 
 @media screen and (max-width: 500px) {
     .titreClients {
-        margin: 15px;
+        margin: 10px;
     }
     .titreclients {
-        font-size: 2.3em;
+        font-size: 2em;
     }
     .texteclients {
         font-size: 0.9em;
     }
     .clientsdeux {
-        margin: 10px
+        margin: 10px;
+        height: auto;
     }
     .imageCollaborateur {
-        height: 270px;
-        width: 300px;
+        width: 100%;
+        background-color: initial;
+    }
+    .textecollaborateur {
+        font-size: 1.2em;
+        height: 50px;
+        display: block;
+        background-color: black;
+        margin: 0%;
     }
 }
 
@@ -464,8 +483,26 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
 }
 
+@media screen and (max-width: 1185px) {
+    .textecitation {
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
 
-/*-----------------------------------------------------------------------EN SAVOIR PLUS------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 500px) {
+    .textecitation {
+        font-size: 2em;
+        margin: 10px;
+    }
+    .elementCitationDeux {
+        font-size: 1.3em;
+        margin: 10px;
+    }
+}
+
+
+/*--------------------------------------------------------------------------EN SAVOIR PLUS------------------------------------------------------------------------------------------------*/
 
 .enSavoirPlus {
     min-height: 800px;
@@ -565,6 +602,97 @@ body {
     justify-content: center;
     align-items: flex-end;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 1216px) {
+    .elementEnSavoirPlus {
+        margin: 10px;
+    }
+    .titreEnSavoirPlus {
+        font-size: 2em;
+        text-align: center;
+    }
+    .soustitreEnSavoirPlus {
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .description {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .descriptionDeux {
+        flex-direction: column;
+    }
+    .titreElementDescriptionDeux {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .texteElementDescriptionDeux {
+        font-size: 1em;
+        text-align: center;
+    }
+    .footerEnSavoirPlus {
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imageElementDescription {
+        height: auto;
+        width: 100%;
+    }
+    .imageElementDescriptionDeux {
+        height: auto;
+        width: 100%;
+    }
+    .titreElementDescriptionDeux {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .texteElementDescriptionDeux {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .footerEnSavoirPlus {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    .texteElementDescription {
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .enSavoirPlus {
+        margin: 0px;
+    }
+    .elementEnSavoirPlus {
+        width: 100%;
+    }
+    .titreEnSavoirPlus {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .soustitreEnSavoirPlus {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .descriptionEnSavoirPlus {
+        width: 100%;
+    }
+    .titreElementDescription {
+        font-size: 1.05em;
+        margin-right: 10px;
+    }
+    .texteElementDescription {
+        font-size: 1em;
+        width: 100%;
+    }
 }
 
 
