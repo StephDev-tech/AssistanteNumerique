@@ -9,7 +9,28 @@ body {
     height: 94vh;
     overflow: scroll;
 }
+/*---------------------------------------------------------------------------ANIMATION--------------------------------------------------------------------------------------------------------------*/
 
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      left: -100%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
 
 .headerBody {
@@ -78,14 +99,7 @@ body {
     z-index: -1; 
 }*/
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 
 .logo {
     position: relative;
@@ -692,6 +706,97 @@ body {
     }
 }
 
+/*-----------------------------------------------------------------------PROJETS--------------------------------------------------------------------------------------------------------------------*/
+.projets{
+    min-height: 800px;
+    width: 100vw;
+    margin: 0%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.elementProjets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 700px;
+}
+
+.titreElementProjets{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: justify;
+    color: rgb(131, 92, 246);
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.sous-titreElementProjets{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Noto Sans Display', sans-serif;
+    text-align: justify;
+    color: white;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.imageElementProjets{
+    height: 300px;
+    width: 500px
+}
+
+.elementProjetsDeux{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.lienProjet{
+    width:  100%;
+    display: block;
+    border: white solid 5px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.titreLienProjet{
+    color: rgb(131, 92, 246);
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 10px;
+    width: 95%;
+
+}
+
+.texteLienProjet{
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 1.2em;
+    margin:  10px;
+    width: 95%;
+}
+
+.SuivrelienProjet{
+    width: 95%;
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 0%;
+    text-align: right;
+    color: white;
+    font-weight: bolder;
+}
 /*-----------------------------------------------------------------------CONTACTS-------------------------------------------------------------------------------------------------------------------*/
 
 .contacts {
