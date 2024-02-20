@@ -10,8 +10,6 @@ body {
     overflow: scroll;
 }
 /*---------------------------------------------------------------------------ANIMATION--------------------------------------------------------------------------------------------------------------*/
-
-
 @keyframes slideIn {
     0% {
       opacity: 0;
@@ -32,7 +30,6 @@ body {
     }
 }
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
-
 .headerBody {
     width: 100%;
     display: flex;
@@ -571,7 +568,7 @@ body {
 
 .imageElementDescriptionDeux {
     height: 450px;
-    width: 700px;
+    width: 100%;
 }
 
 .titreElementDescriptionDeux {
@@ -642,7 +639,7 @@ body {
     }
     .imageElementDescriptionDeux {
         height: auto;
-        width: 100%;
+        width: 90%;
     }
     .titreElementDescriptionDeux {
         font-size: 1.2em;
@@ -692,21 +689,20 @@ body {
 }
 /*-----------------------------------------------------------------------PROJETS--------------------------------------------------------------------------------------------------------------------*/
 .projets{
-    min-height: 800px;
+    min-height: 830px;
     width: 100vw;
     margin: 0%;
-    background-color: black;
+    background-color: rgb(131, 92, 246);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .elementProjets{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 700px;
+    width: 40%;
 }
 
 .titreElementProjets{
@@ -714,7 +710,7 @@ body {
     justify-content: flex-start;
     font-family: 'Noto Sans Display', sans-serif;
     text-align: justify;
-    color: rgb(131, 92, 246);
+    color: black;
     font-size: 4em;
     margin-bottom: 0;
 }
@@ -730,6 +726,10 @@ body {
     margin-bottom: 50px;
 }
 
+.divImageElementProjets{
+    width: 100%;
+}
+
 .imageElementProjets{
     height: 300px;
     width: 500px
@@ -738,23 +738,23 @@ body {
 .elementProjetsDeux{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 40%;
 }
 
 .lienProjet{
-    width:  100%;
+    width:  70%;
+    margin-bottom: 2%;
     display: block;
     border: white solid 5px;
     box-sizing: border-box;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     text-decoration: none;
 }
 
 .titreLienProjet{
-    color: rgb(131, 92, 246);
+    color: black;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 2em;
     text-decoration: underline;
@@ -780,6 +780,150 @@ body {
     text-align: right;
     color: white;
     font-weight: bolder;
+}
+
+@media  screen and (max-width:1230px) {
+    .projets{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .elementProjets{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .titreProjets{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+    .titreElementProjets{
+        font-size: 3.2em;
+    }
+
+    .sous-titreElementProjets{
+        margin-bottom: 15px;
+    }
+
+    .imageElementProjets{
+        margin-top: 0px;
+        margin-bottom: 16px;
+        height: 230px;
+        width: 60%;
+    }
+
+    .elementProjetsDeux{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .lienProjet{
+        height: 260px;
+        width: 30%;
+        border: white solid 3px;
+    }
+
+    .titreLienProjet{
+        color: black;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 1.8em;
+        text-decoration: underline;
+        margin: 10px;
+        width: 95%;
+        margin-top: 5px;
+    
+    }
+
+    .tailleTitrespecifique{
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    .texteLienProjet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 1em;
+        margin:  10px;
+        width: 95%;
+    }
+
+    .SuivrelienProjet{
+        width: 95%;
+        font-size: 2.4em;
+        margin-bottom: 10px;
+        margin-top: 0%;
+        text-align: right;
+        color: white;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width:850px){
+    .elementProjets{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+        padding-left: none;
+    }
+
+    .titreProjets{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .titreElementProjets{
+        font-size: 2.9em;
+    }
+
+    .sous-titreElementProjets{
+        margin-bottom: 10px;
+    }
+
+    .divImageElementProjets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageElementProjets{
+        margin-top: 0px;
+        margin-bottom: 16px;
+        height: 230px;
+        width: 59%;
+    }
+
+    .elementProjetsDeux{
+        width: 100%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .lienProjet{
+        width:  90%;
+        height: 20%;
+        display:flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
 }
 /*-----------------------------------------------------------------------CONTACTS-------------------------------------------------------------------------------------------------------------------*/
 .contacts {
