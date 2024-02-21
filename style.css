@@ -793,6 +793,7 @@ body {
     .elementProjets{
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 90%;
     }
 
@@ -805,10 +806,18 @@ body {
 
     .titreElementProjets{
         font-size: 3.2em;
+        text-align: center;
     }
 
     .sous-titreElementProjets{
         margin-bottom: 15px;
+        align-self: center;
+    }
+
+    .divImageElementProjets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .imageElementProjets{
@@ -888,7 +897,7 @@ body {
     }
 
     .titreElementProjets{
-        font-size: 2.9em;
+        font-size: 2.8em;
     }
 
     .sous-titreElementProjets{
@@ -904,8 +913,9 @@ body {
     .imageElementProjets{
         margin-top: 0px;
         margin-bottom: 16px;
-        height: 230px;
-        width: 59%;
+        height: 180px;
+        min-width: 200px;
+        width: 70%;
     }
 
     .elementProjetsDeux{
