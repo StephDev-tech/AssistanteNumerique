@@ -1011,6 +1011,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 45px;
+    margin-bottom: 30px;
 }
 
 .icon {
@@ -1043,7 +1044,7 @@ body {
     border-radius: 50px;
     margin-top: 38px;
     margin-bottom: 40px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
