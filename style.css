@@ -8,19 +8,22 @@ body {
 .main {
     overflow-x: hidden;
 }
+
+
 /*---------------------------------------------------------------------------ANIMATION--------------------------------------------------------------------------------------------------------------*/
+
 @keyframes slideIn {
     0% {
-      opacity: 0;
-      left: -100%;
+        opacity: 0;
+        left: -100%;
     }
     100% {
-      opacity: 1;
-      left: 0;
+        opacity: 1;
+        left: 0;
     }
-  }
+}
 
-  @keyframes rotation {
+@keyframes rotation {
     from {
         transform: rotate(0deg);
     }
@@ -28,7 +31,10 @@ body {
         transform: rotate(360deg);
     }
 }
+
+
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
+
 .headerBody {
     width: 100%;
     display: flex;
@@ -37,7 +43,6 @@ body {
     z-index: 1;
     position: fixed;
     top: 0;
-    background-color: white;
 }
 
 .iconMenu {
@@ -51,14 +56,23 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    background-color: white;
+    height: 45px;
+    width: 100%;
 }
 
 .elementheader {
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-family: 'Noto Sans Display', sans-serif;
     color: black;
+}
+
+.sidebarIcons {
+    display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -66,12 +80,33 @@ body {
         position: fixed;
         bottom: 0;
         width: 100%;
+        height: 45px;
         justify-content: space-around;
         flex-wrap: wrap;
         background-color: white;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebarIcons {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+}
+
+
 /*-----------------------------------------------------------------------------HOME--------------------------------------------------------------------------------------------------------------*/
+
 .home {
     min-height: 800px;
     width: 100vw;
@@ -170,7 +205,10 @@ body {
         min-height: 600px;
     }
 }
+
+
 /*---------------------------------------------------------------------------PROFILE----------------------------------------------------------------------------------------------------------*/
+
 .profile {
     min-height: 800px;
     width: 100vw;
@@ -272,7 +310,10 @@ body {
         font-size: 0.9em;
     }
 }
+
+
 /*--------------------------------------------------------------------------SERVICE---------------------------------------------------------------------------------------------------------*/
+
 .service {
     min-height: 800px;
     width: 100vw;
@@ -345,7 +386,10 @@ body {
         flex-direction: column;
     }
 }
+
+
 /*--------------------------------------------------------------------------CLIENTS-------------------------------------------------------------------------------------------------------*/
+
 .clients {
     min-height: 800px;
     width: 100vw;
@@ -453,7 +497,10 @@ body {
         margin: 0%;
     }
 }
+
+
 /*---------------------------------------------------------------------------CITATION----------------------------------------------------------------------------------------------------*/
+
 .citation {
     min-height: 800px;
     width: 100vw;
@@ -502,7 +549,10 @@ body {
         margin: 10px;
     }
 }
+
+
 /*--------------------------------------------------------------------------EN SAVOIR PLUS------------------------------------------------------------------------------------------------*/
+
 .enSavoirPlus {
     min-height: 800px;
     width: 100vw;
@@ -693,37 +743,42 @@ body {
         width: 100%;
     }
 }
+
+
 /*-----------------------------------------------------------------------PROJETS--------------------------------------------------------------------------------------------------------------------*/
-.projets{
+
+.projets {
     min-height: 830px;
     width: 100vw;
     margin: 0%;
     background-color: rgb(131, 92, 246);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.elementProjets{
+.elementProjets {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
-.titreElementProjets{
+.titreElementProjets {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: 'Noto Sans Display', sans-serif;
     text-align: justify;
     color: black;
     font-size: 4em;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
-.sous-titreElementProjets{
+.sous-titreElementProjets {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: 'Noto Sans Display', sans-serif;
     text-align: justify;
     color: white;
@@ -732,55 +787,60 @@ body {
     margin-bottom: 50px;
 }
 
-.divImageElementProjets{
-    width: 100%;
+.divImageElementProjets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.imageElementProjets{
-    height: 300px;
-    width: 500px;
+.imageElementProjets {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    height: 500px;
+    width: 60%;
     border-radius: 5px;
 }
 
-.elementProjetsDeux{
+.elementProjetsDeux {
+    width: 70%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 40%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.lienProjet{
-    width:  70%;
+.lienProjet {
+    width: 30%;
     margin-bottom: 2%;
     display: block;
     border: white solid 4px;
     border-radius: 5px;
     box-sizing: border-box;
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-decoration: none;
+    height: 300px;
 }
 
-.titreLienProjet{
+.titreLienProjet {
     color: black;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 2em;
     text-decoration: underline;
     margin: 10px;
     width: 95%;
-
 }
 
-.texteLienProjet{
+.texteLienProjet {
     text-decoration: none;
     color: white;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.2em;
-    margin:  10px;
+    margin: 10px;
     width: 95%;
 }
 
-.SuivrelienProjet{
+.SuivrelienProjet {
     width: 95%;
     font-size: 3em;
     margin-bottom: 10px;
@@ -790,66 +850,19 @@ body {
     font-weight: bolder;
 }
 
-@media  screen and (max-width:1230px) {
-    .projets{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .elementProjets{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-
-    .titreProjets{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-
-    .titreElementProjets{
+@media screen and (max-width:1230px) {
+    .titreElementProjets {
         font-size: 3.2em;
         text-align: center;
     }
-
-    .sous-titreElementProjets{
+    .sous-titreElementProjets {
         margin-bottom: 15px;
         align-self: center;
     }
-
-    .divImageElementProjets{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imageElementProjets{
-        margin-top: 0px;
-        margin-bottom: 16px;
-        height: 230px;
-        width: 60%;
-    }
-
-    .elementProjetsDeux{
+    .elementProjetsDeux {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
     }
-
-    .lienProjet{
-        height: 260px;
-        width: 30%;
-        border: white solid 3px;
-    }
-
-    .titreLienProjet{
+    .titreLienProjet {
         color: black;
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 1.8em;
@@ -857,15 +870,12 @@ body {
         margin: 10px;
         width: 95%;
         margin-top: 5px;
-    
     }
-
-    .tailleTitrespecifique{
+    .tailleTitrespecifique {
         margin-bottom: 0px;
         margin-top: 5px;
     }
-
-    .texteLienProjet{
+    .texteLienProjet {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -873,11 +883,10 @@ body {
         color: white;
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 1em;
-        margin:  10px;
+        margin: 10px;
         width: 95%;
     }
-
-    .SuivrelienProjet{
+    .SuivrelienProjet {
         width: 95%;
         font-size: 2.4em;
         margin-bottom: 10px;
@@ -888,8 +897,8 @@ body {
     }
 }
 
-@media screen and (max-width:850px){
-    .elementProjets{
+@media screen and (max-width:850px) {
+    .elementProjets {
         width: 80%;
         display: flex;
         justify-content: center;
@@ -897,36 +906,30 @@ body {
         margin-top: 0%;
         padding-left: none;
     }
-
-    .titreProjets{
+    .titreProjets {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
-
-    .titreElementProjets{
+    .titreElementProjets {
         font-size: 2.8em;
     }
-
-    .sous-titreElementProjets{
+    .sous-titreElementProjets {
         margin-bottom: 10px;
     }
-
-    .divImageElementProjets{
+    .divImageElementProjets {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
-    .imageElementProjets{
+    .imageElementProjets {
         margin-top: 0px;
         margin-bottom: 16px;
         height: 180px;
         min-width: 200px;
         width: 70%;
     }
-
-    .elementProjetsDeux{
+    .elementProjetsDeux {
         width: 100%;
         margin-bottom: 2%;
         display: flex;
@@ -934,16 +937,18 @@ body {
         justify-content: space-evenly;
         align-items: center;
     }
-
-    .lienProjet{
-        width:  90%;
+    .lienProjet {
+        width: 90%;
         height: 20%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         text-decoration: none;
     }
 }
+
+
 /*-----------------------------------------------------------------------CONTACTS-------------------------------------------------------------------------------------------------------------------*/
+
 .contacts {
     min-height: 800px;
     width: 100vw;
