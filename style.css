@@ -709,6 +709,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-left: 50px;
 }
 
 .titreElementProjets{
@@ -752,6 +753,7 @@ body {
 .lienProjet{
     width:  70%;
     margin-bottom: 2%;
+    margin-left: 20px;
     display: block;
     border: white solid 4px;
     border-radius: 5px;
