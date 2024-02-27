@@ -812,6 +812,7 @@ body {
 .lienProjet {
     width: 30%;
     margin-bottom: 2%;
+    margin-left: 20px;
     display: block;
     border: white solid 4px;
     border-radius: 5px;
