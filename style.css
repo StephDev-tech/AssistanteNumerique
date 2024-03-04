@@ -449,6 +449,8 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.5em;
     white-space: pre;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 @media screen and (max-width: 1320px) {
@@ -471,7 +473,7 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 466px) {
     .titreClients {
         margin: 10px;
     }
@@ -488,6 +490,7 @@ body {
     .imageCollaborateur {
         width: 100%;
         background-color: initial;
+        border-radius: 5px;
     }
     .textecollaborateur {
         font-size: 1.2em;
