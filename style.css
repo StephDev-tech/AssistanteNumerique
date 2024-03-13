@@ -167,6 +167,7 @@ body {
     margin-top: 0;
     margin-left: 160px;
     margin-right: 160px;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 900px) {
@@ -323,6 +324,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .titreService {
@@ -341,11 +343,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
+    max-width: 700px;
     background-image: url(./image/bg.jpg);
     background-position: center;
-    min-height: 400px;
+    min-height: 500px;
     border-radius: 5px;
+    margin-top: 50px;
 }
 
 .listeService {
@@ -360,7 +363,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 30px;
     width: 20%;
 }
 
@@ -396,6 +399,7 @@ body {
     margin: 0%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .titreClients {
@@ -429,14 +433,13 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .imageCollaborateur {
     display: flex;
     flex-direction: column;
     background-color: black;
-    height: 350px;
     width: 400px;
     margin: 20px;
     margin-bottom: 40px;
@@ -449,8 +452,15 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 1.5em;
     white-space: pre;
+    height: 15%;
+    margin: auto;
+}
+
+.collab {
+    height: 85%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+
 }
 
 @media screen and (max-width: 1320px) {
@@ -487,17 +497,15 @@ body {
         margin: 10px;
         height: auto;
     }
+
     .imageCollaborateur {
         width: 100%;
         background-color: initial;
         border-radius: 5px;
     }
+
     .textecollaborateur {
-        font-size: 1.2em;
-        height: 50px;
-        display: block;
-        background-color: black;
-        margin: 0%;
+        font-size: 1em;
     }
 }
 
@@ -599,10 +607,12 @@ body {
 .titreElementDescription {
     font-family: 'Noto Sans Display', sans-serif;
     text-align: end;
-    font-size: 1.4em;
+    font-size: 1.5em;
     white-space: pre;
     margin-bottom: 0%;
     width: 100%;
+    font-weight: bold;
+    color: rgb(115, 79, 223);
 }
 
 .texteElementDescription {
@@ -633,9 +643,10 @@ body {
 .titreElementDescriptionDeux {
     font-family: 'Noto Sans Display', sans-serif;
     text-align: justify;
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 0%;
     width: 100%;
+    color: rgb(115, 79, 223);
 }
 
 .texteElementDescriptionDeux {
@@ -759,6 +770,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .elementProjets {
@@ -799,8 +812,7 @@ body {
 .imageElementProjets {
     margin-top: 0px;
     margin-bottom: 16px;
-    height: 350px;
-    width: 70%;
+    height: 550px;
     border-radius: 5px;
 }
 
@@ -1093,3 +1105,6 @@ body {
         border: none;
     }
 }
+
+
+/*-----------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------*/
