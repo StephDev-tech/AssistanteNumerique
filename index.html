@@ -7,6 +7,7 @@
     <title>Assistante Numérique Freelance</title>
     <link rel="icon" href="./image/faviconAss.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
@@ -40,9 +41,9 @@
     <main class="main">
         <header id="home" class="home">
             <div class="logo">
-                <img class="sizeLogo" src="./image/logoAss.svg" alt="logo">
+                <img class="sizeLogo spiner" src="./image/logoAss.svg" alt="logo">
             </div>
-            <div class="titre">
+            <div id="titre" class="titre slideInTitle">
                 <h1 class="tailletitre">Assitante<br>Numérique Freelance</h1>
                 <h2 class="taillesoustitre">Confidentialité. Engagement. Valeur.</h2>
             </div>
@@ -53,11 +54,11 @@
                 <img class="photoprofile" src="./image/photoprofile.png" alt="photo de profile">
             </div>
             <div class="elementprofile">
-                <h2 class="titreElementProfile">Libérez votre <br>temps,engagez <br>l'assistance.</h2>
+                <h2 id="titreElementProfile" class="titreElementProfile">Libérez votre <br>temps,engagez <br>l'assistance.</h2>
                 <p class="descriptionProfile">Libérez-vous du poids des tâches administratives !<br> Confiez-les à une assistante freelance dévouée pour <br>vous permettre de vous concentrer sur l'essentiel de <br> votre activité.</p>
                 <div class="elementprofile2">
-                    <a class="boutton" href="#citation">En savoir plus <span class="flecheBas"> ></span></a>
-                    <a class="boutton" target="_blank" href="https://drive.google.com/file/d/1q8eaQM-_FcrY8-5AddTYhdtK2bvsM7VF/view">Mon CV <span class="flecheDroite">></span></a>
+                    <a class="boutton" id="btnEnSavoirPlus" href="#citation">En savoir plus <span class="flecheBas"> ></span></a>
+                    <a class="boutton" id="btnCv" target="_blank" href="https://drive.google.com/file/d/1q8eaQM-_FcrY8-5AddTYhdtK2bvsM7VF/view">Mon CV <span class="flecheDroite">></span></a>
                 </div>
             </div>
         </section>
@@ -192,20 +193,19 @@
                     <p class="SuivrelienProjet">></p>
                 </a>
             </div>
-<
-            <h2 class="titreElementProjets">Analyses</h2>
-            <div class="elementProjetsDeux">
-                <a class="lienProjet" href="https://drive.google.com/file/d/19jFd8icc3hCXYp9ANr62PJMAvhpHvE6P/view?usp=sharing" target="_blank">
-                    <h3 class="titreLienProjet"> Budget du foyer</h3>
-                    <p class="texteLienProjet">Analyse des ressources et des dépenses d'un foyer, accompagnée de recommandations pour élaborer un plan visant à réaliser des économies.</p>
-                    <p class="SuivrelienProjet">></p>
-                </a>
-                <a class="lienProjet" href="https://drive.google.com/file/d/1EvzhbJwS7A6eAmKD42haVc8d_cpl2wDH/view?usp=sharing" target="_blank">
-                    <h3 class="titreLienProjet"> Fichier de caisse</h3>
-                    <p class="texteLienProjet">récapitulatif des transactions financières, telles que les ventes, les paiements et les remboursements, pour assurer le suivi précis des mouvements monétaires.</p>
-                    <p class="SuivrelienProjet">></p>
-                </a>
-            </div>
+            < <h2 class="titreElementProjets">Analyses</h2>
+                <div class="elementProjetsDeux">
+                    <a class="lienProjet" href="https://drive.google.com/file/d/19jFd8icc3hCXYp9ANr62PJMAvhpHvE6P/view?usp=sharing" target="_blank">
+                        <h3 class="titreLienProjet"> Budget du foyer</h3>
+                        <p class="texteLienProjet">Analyse des ressources et des dépenses d'un foyer, accompagnée de recommandations pour élaborer un plan visant à réaliser des économies.</p>
+                        <p class="SuivrelienProjet">></p>
+                    </a>
+                    <a class="lienProjet" href="https://drive.google.com/file/d/1EvzhbJwS7A6eAmKD42haVc8d_cpl2wDH/view?usp=sharing" target="_blank">
+                        <h3 class="titreLienProjet"> Fichier de caisse</h3>
+                        <p class="texteLienProjet">récapitulatif des transactions financières, telles que les ventes, les paiements et les remboursements, pour assurer le suivi précis des mouvements monétaires.</p>
+                        <p class="SuivrelienProjet">></p>
+                    </a>
+                </div>
 
 
         </section>
