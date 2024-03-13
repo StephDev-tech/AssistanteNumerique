@@ -495,12 +495,10 @@ body {
     }
     .clientsdeux {
         margin: 10px;
-        height: auto;
     }
 
     .imageCollaborateur {
         width: 100%;
-        background-color: initial;
         border-radius: 5px;
     }
 
