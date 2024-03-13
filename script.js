@@ -20,6 +20,19 @@ const slideInBigElement = "slideInTitle"
 slideFromLeft("btnEnSavoirPlus", slideInSmallElement)
 slideFromLeft("btnCv", slideInSmallElement)
 slideFromLeft("titreElementProfile", slideInBigElement)
+slideFromLeft("collab1", slideInBigElement)
+slideFromLeft("collab2", slideInBigElement)
+slideFromLeft("collab3", slideInBigElement)
+slideFromLeft("titreCollab", slideInBigElement)
+slideFromLeft("engagezLassistance", slideInBigElement)
+slideFromLeft("divImageElementProjets", slideInBigElement)
+slideFromLeft("titreWeb", slideInBigElement)
+slideFromLeft("titreAnalyses", slideInBigElement)
+slideFromLeft("travaillonsEnsemble", slideInBigElement)
+
+
+
+let services = []
 
 function incrementEverySecond() {
     let count = 1;
