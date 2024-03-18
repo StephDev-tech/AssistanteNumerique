@@ -423,6 +423,7 @@ body {
     margin-bottom: 40px;
     border-radius: 5px;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .textecollaborateur {
@@ -449,7 +450,6 @@ body {
         font-size: 1em;
     }
     .imageCollaborateur {
-        height: 300px;
         width: 330px;
     }
     .clientsdeux {
@@ -470,9 +470,6 @@ body {
     }
     .clientsdeux {
         margin: 10px;
-    }
-    .imageCollaborateur {
-        border-radius: 5px;
     }
     .textecollaborateur {
         font-size: 1em;
@@ -513,9 +510,41 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
 }
 
+.blockclientcitation {
+    width: 90%;
+    margin: 60px;
+}
+
+.clientcitation {
+    color: white;
+    font-size: 2em;
+    margin: 50px;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textright {
+    text-align: right;
+}
+
 @media screen and (max-width: 1185px) {
     .textecitation {
         font-size: 2.5em;
+        text-align: center;
+    }
+    .textleft {
+        text-align: center;
+    }
+    .textcenter {
+        text-align: center;
+    }
+    .textright {
         text-align: center;
     }
 }
@@ -794,22 +823,8 @@ body {
     align-items: center;
 }
 
-.lienProjet {
-    width: 30%;
-    margin-bottom: 2%;
-    margin-left: 20px;
-    display: block;
-    border: white solid 4px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    height: 350px;
-}
-
 .titreLienProjet {
-    color: black;
+    color: white;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 2em;
     text-decoration: underline;
@@ -826,6 +841,7 @@ body {
     margin: 10px;
     width: 95%;
     height: 70%;
+    text-decoration: none;
 }
 
 .SuivrelienProjet {
@@ -855,7 +871,6 @@ body {
         width: 100%;
     }
     .titreLienProjet {
-        color: black;
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 1.8em;
         text-decoration: underline;
@@ -1071,7 +1086,7 @@ body {
     }
     .elementContactsDeux {
         width: 80%;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 }
 
@@ -1113,4 +1128,11 @@ body {
 
 .slideIn {
     animation: slideIn 1s;
+}
+
+
+/*-----------------------------------------------------------------------OTHERS-------------------------------------------------------------------------------------------------------------------*/
+
+.nomargin {
+    margin: 0%;
 }
