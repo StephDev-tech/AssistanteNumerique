@@ -542,7 +542,7 @@ body {
         text-align: center;
     }
     .textcenter {
-        text-align: center;
+        display: none;
     }
     .textright {
         text-align: center;
