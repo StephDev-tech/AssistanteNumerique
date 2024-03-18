@@ -510,9 +510,41 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
 }
 
+.blockclientcitation {
+    width: 90%;
+    margin: 60px;
+}
+
+.clientcitation {
+    color: white;
+    font-size: 2em;
+    margin: 50px;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textright {
+    text-align: right;
+}
+
 @media screen and (max-width: 1185px) {
     .textecitation {
         font-size: 2.5em;
+        text-align: center;
+    }
+    .textleft {
+        text-align: center;
+    }
+    .textcenter {
+        text-align: center;
+    }
+    .textright {
         text-align: center;
     }
 }
@@ -1054,7 +1086,7 @@ body {
     }
     .elementContactsDeux {
         width: 80%;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
 }
 

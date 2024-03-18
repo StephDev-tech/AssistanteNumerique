@@ -28,6 +28,7 @@ slideFromLeft("engagezLassistance", slideInBigElement)
 slideFromLeft("divImageElementProjets", slideInBigElement)
 slideFromLeft("titreWeb", slideInBigElement)
 slideFromLeft("titreAnalyses", slideInBigElement)
+slideFromLeft("titreFormation", slideInBigElement)
 slideFromLeft("travaillonsEnsemble", slideInBigElement)
 
 
