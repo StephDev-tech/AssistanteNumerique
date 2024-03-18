@@ -423,6 +423,7 @@ body {
     margin-bottom: 40px;
     border-radius: 5px;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .textecollaborateur {
@@ -449,7 +450,6 @@ body {
         font-size: 1em;
     }
     .imageCollaborateur {
-        height: 300px;
         width: 330px;
     }
     .clientsdeux {
@@ -470,9 +470,6 @@ body {
     }
     .clientsdeux {
         margin: 10px;
-    }
-    .imageCollaborateur {
-        border-radius: 5px;
     }
     .textecollaborateur {
         font-size: 1em;
@@ -794,22 +791,8 @@ body {
     align-items: center;
 }
 
-.lienProjet {
-    width: 30%;
-    margin-bottom: 2%;
-    margin-left: 20px;
-    display: block;
-    border: white solid 4px;
-    border-radius: 5px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    height: 350px;
-}
-
 .titreLienProjet {
-    color: black;
+    color: white;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 2em;
     text-decoration: underline;
@@ -826,6 +809,7 @@ body {
     margin: 10px;
     width: 95%;
     height: 70%;
+    text-decoration: none;
 }
 
 .SuivrelienProjet {
@@ -855,7 +839,6 @@ body {
         width: 100%;
     }
     .titreLienProjet {
-        color: black;
         font-family: 'Noto Sans Display', sans-serif;
         font-size: 1.8em;
         text-decoration: underline;
@@ -1113,4 +1096,11 @@ body {
 
 .slideIn {
     animation: slideIn 1s;
+}
+
+
+/*-----------------------------------------------------------------------OTHERS-------------------------------------------------------------------------------------------------------------------*/
+
+.nomargin {
+    margin: 0%;
 }
