@@ -213,6 +213,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 5em;
     line-height: 1;
+    max-width: 900px;
 }
 
 .descriptionProfile {
@@ -316,16 +317,19 @@ body {
 
 .titreService {
     margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .titreservice {
     color: white;
     font-size: 4em;
     font-family: 'Noto Sans Display', sans-serif;
+    width: 100%;
+    text-align: center;
 }
 
 .imageService {
@@ -515,6 +519,7 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 3em;
     color: white;
+    max-width: 85%;
 }
 
 .elementCitationDeux {
