@@ -93,6 +93,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-image: url(./image/backgroundhome.jpg);
+    background-position: top;
+    background-attachment: fixed;
     filter: grayscale(10%);
     background-position: bottom;
     background-size: cover;
