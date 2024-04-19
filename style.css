@@ -118,8 +118,8 @@ body {
 }
 
 .logofinal {
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     margin-left: 100px;
     margin-bottom: 0;
     position: relative;
@@ -160,6 +160,12 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .logofinal{
+       margin-left: 10px; 
+       height: 400px;
+       width: 400px;
+    }
+
     .sizeLogo {
         margin-left: 10px;
     }
@@ -175,6 +181,11 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+    .logofinal{
+        height: 250px;
+        width: 250px;
+        margin-bottom: 50px;
+    }
     .sizeLogo {
         margin-left: 10px;
     }
