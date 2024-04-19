@@ -117,6 +117,15 @@ body {
     top: 150px;
 }
 
+.logofinal {
+    height: 500px;
+    width: 500px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    position: relative;
+    top: 100px
+}
+
 .sizeLogo {
     height: 100px;
     width: 100px;
