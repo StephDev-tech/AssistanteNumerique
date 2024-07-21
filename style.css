@@ -271,6 +271,8 @@ body {
 }
 
 @media screen and (max-width: 610px) {
+
+
     .photoprofilebox {
         display: flex;
         justify-content: center;
@@ -530,7 +532,7 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 3em;
     color: white;
-    max-width: 85%;
+    max-width: 1300px;
 }
 
 .elementCitationDeux {
@@ -542,6 +544,7 @@ body {
 .blockclientcitation {
     width: 90%;
     margin: 60px;
+    max-width: 1300px;
 }
 
 .clientcitation {
@@ -593,12 +596,13 @@ body {
 /*--------------------------------------------------------------------------EN SAVOIR PLUS------------------------------------------------------------------------------------------------*/
 
 .enSavoirPlus {
-    min-height: 800px;
+    min-height: 600px;
     width: 100vw;
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: 0%;
 }
 
 .titreEnSavoirPlus {
