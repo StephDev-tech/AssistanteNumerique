@@ -117,6 +117,15 @@ body {
     top: 150px;
 }
 
+.logofinal {
+    height: 450px;
+    width: 450px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    position: relative;
+    top: 100px
+}
+
 .sizeLogo {
     height: 100px;
     width: 100px;
@@ -151,6 +160,12 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .logofinal{
+       margin-left: 10px; 
+       height: 400px;
+       width: 400px;
+    }
+
     .sizeLogo {
         margin-left: 10px;
     }
@@ -166,6 +181,11 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+    .logofinal{
+        height: 250px;
+        width: 250px;
+        margin-bottom: 50px;
+    }
     .sizeLogo {
         margin-left: 10px;
     }
@@ -262,6 +282,8 @@ body {
 }
 
 @media screen and (max-width: 610px) {
+
+
     .photoprofilebox {
         display: flex;
         justify-content: center;
@@ -521,7 +543,7 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 3em;
     color: white;
-    max-width: 85%;
+    max-width: 1300px;
 }
 
 .elementCitationDeux {
@@ -533,6 +555,7 @@ body {
 .blockclientcitation {
     width: 90%;
     margin: 60px;
+    max-width: 1300px;
 }
 
 .clientcitation {
@@ -584,12 +607,13 @@ body {
 /*--------------------------------------------------------------------------EN SAVOIR PLUS------------------------------------------------------------------------------------------------*/
 
 .enSavoirPlus {
-    min-height: 800px;
+    min-height: 600px;
     width: 100vw;
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: 0%;
 }
 
 .titreEnSavoirPlus {
