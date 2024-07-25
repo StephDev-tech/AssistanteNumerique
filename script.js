@@ -81,9 +81,13 @@ function prevImage() {
     showImage(currentIndex, 'prev');
 }
 
-setInterval(nextImage, 3000); // Change slide every 3 seconds
+let changementAuto = setInterval(nextImage, 3000); // Change slide every 3 seconds
 
 let carousel = document.querySelector('.carousel');
 carousel.addEventListener("mouseover",()=>{
-    console.log("hi");
+    clearInterval(changementAuto)
+})
+
+carousel.addEventListener("mouseout",()=>{
+     changementAuto = setInterval(nextImage, 3000); // Change slide every 3 seconds
 })
