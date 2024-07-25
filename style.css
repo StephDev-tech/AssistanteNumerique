@@ -830,8 +830,12 @@ body {
     color: black;
     font-size: 4em;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
+.descriptionProjet{
 
+    text-align: center;
+}
 .sous-titreElementProjets {
     display: flex;
     justify-content: center;
@@ -994,6 +998,64 @@ body {
 }
 
 
+/*---------------------------------------------------------------------- CAROUSEL ------------------------------*/
+
+
+.carousel {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.carousel img {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    border-radius: 10px;
+
+}
+.carousel img.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+.carousel img.prev {
+    transform: translateX(-100%);
+}
+.carousel img.next {
+    transform: translateX(100%);
+}
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel {
+        max-width: 80%;
+        margin: 5px;
+        height: 400px;
+
+    }
+}
 /*-----------------------------------------------------------------------CONTACTS-------------------------------------------------------------------------------------------------------------------*/
 
 .contacts {

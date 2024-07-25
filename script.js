@@ -34,7 +34,7 @@ slideFromLeft("travaillonsEnsemble", slideInBigElement)
 
 
 let services = []
-
+/*
 function incrementEverySecond() {
     let count = 1;
     let intervalID = setInterval(function() {
@@ -52,3 +52,38 @@ function incrementEverySecond() {
 
 // Appel de la fonction
 incrementEverySecond();
+*/
+/*---------------------------------------------------------------------- CAROUSEL ------------------------------*/
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel img');
+const totalImages = images.length;
+
+function showImage(index, direction) {
+    images.forEach((img, i) => {
+        img.classList.remove('active', 'prev', 'next');
+        if (i === index) {
+            img.classList.add('active');
+        } else if (i === (index - 1 + totalImages) % totalImages) {
+            img.classList.add('prev');
+        } else if (i === (index + 1) % totalImages) {
+            img.classList.add('next');
+        }
+    });
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    showImage(currentIndex, 'next');
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    showImage(currentIndex, 'prev');
+}
+
+setInterval(nextImage, 3000); // Change slide every 3 seconds
+
+let carousel = document.querySelector('.carousel');
+carousel.addEventListener("mouseover",()=>{
+    console.log("hi");
+})
