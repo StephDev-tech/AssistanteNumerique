@@ -89,5 +89,6 @@ carousel.addEventListener("mouseover",()=>{
 })
 
 carousel.addEventListener("mouseout",()=>{
+    nextImage()
      changementAuto = setInterval(nextImage, 3000); // Change slide every 3 seconds
 })
