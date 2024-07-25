@@ -8,8 +8,62 @@ body {
 .main {
     overflow-x: hidden;
 }
+/*---------------------------------------------------------------------------Style vague entre les sections --------------------------------------------------------------------------------------------------------------*/
 
 
+.waveTop {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: -5px; /* Adjust the overlap */
+}
+
+.waveTop svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.waveBottom{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: -5px; /* Adjust the overlap */
+    rotate: 180deg;
+}
+.waveBottom svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.blackBkg{
+    background-color: rgb(0, 0, 0);
+
+}
+.violetBkg{
+    background-color: rgb(131, 92, 246);
+
+}
+
+@media screen and (max-width:1000px){
+    .waveBottom{
+        height: 100px;
+
+    }
+    .waveTop{
+        height: 100px;
+
+    }
+}
+@media screen and (max-width:500px){
+    .waveBottom{
+        height: 50px;
+
+    }
+    .waveTop{
+        height: 50px;
+
+    }
+}
 /*---------------------------------------------------------------------------HEADER--------------------------------------------------------------------------------------------------------------*/
 
 .headerBody {
@@ -80,6 +134,7 @@ body {
         background-color: white;
     }
 }
+
 
 
 /*-----------------------------------------------------------------------------HOME--------------------------------------------------------------------------------------------------------------*/
