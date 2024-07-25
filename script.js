@@ -92,3 +92,24 @@ carousel.addEventListener("mouseout",()=>{
     nextImage()
      changementAuto = setInterval(nextImage, 3000); // Change slide every 3 seconds
 })
+
+
+/*---------------------------------------------------------------------- VTS Connexion ------------------------------*/
+
+
+function getNetworkType() {
+    return navigator.connection ? navigator.connection.effectiveType : '4g';
+}
+
+function isSlowConnection() {
+    const slowTypes = ['2g', '3g', 'slow-2g'];
+    return slowTypes.includes(getNetworkType());
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (isSlowConnection()) {
+       console.log("isSlowConnection");
+    } else {
+        console.log("ishHighConnection");
+    }
+});
