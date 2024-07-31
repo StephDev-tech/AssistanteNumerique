@@ -1267,7 +1267,51 @@ body {
     }
 }
 
+/*-----------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------*/
+.BodyFooter{
+    background-color:rgb(131, 92, 246) ;
+    width: 100%;
 
+}
+.BodyFooter>*{
+    width: 100%;
+}
+
+.pieddepage
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    margin-top:10px;
+
+}
+
+.pieddepage a {
+    text-decoration: none;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: black;
+
+}
+
+@media screen and (max-width:500px) {
+    .pieddepage
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        gap: 50px;
+        margin-top: 50px;
+    
+    }  
+
+    .divers{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+
+}
 /*-----------------------------------------------------------------------ANIMATION-------------------------------------------------------------------------------------------------------------------*/
 
 @keyframes slideIn {
