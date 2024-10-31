@@ -185,18 +185,10 @@ body {
     top: 150px;
 }
 
-.logofinal {
-    height: 450px;
-    width: 450px;
-    margin-left: 100px;
-    margin-bottom: 0;
-    position: relative;
-    top: 100px
-}
+
 
 .sizeLogo {
-    height: 100px;
-    width: 100px;
+    height: 250px;
     margin-left: 160px;
     display: inline-block;
 }
@@ -227,35 +219,12 @@ body {
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 900px) {
-    .logofinal{
-       margin-left: 10px; 
-       height: 400px;
-       width: 400px;
-    }
+@media screen and (max-width: 1000px) {
+
 
     .sizeLogo {
         margin-left: 10px;
-    }
-    .tailletitre {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 4em;
-    }
-    .taillesoustitre {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
 
-@media screen and (max-width: 400px) {
-    .logofinal{
-        height: 250px;
-        width: 250px;
-        margin-bottom: 50px;
-    }
-    .sizeLogo {
-        margin-left: 10px;
     }
     .tailletitre {
         margin-left: 10px;
@@ -265,7 +234,27 @@ body {
     .taillesoustitre {
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   
+    
+    .sizeLogo {
+        margin-left: 10px;
+        height: 100px;
+
+    margin-top: 0%;
+    }
+    .tailletitre {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 3em;
+    }
+    .taillesoustitre {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
     }
     .logo {
         position: relative;
@@ -335,13 +324,6 @@ body {
     margin: 2px;
 }
 
-.flecheBas {
-    display: block;
-    font-size: 1.5em;
-    margin-top: 3px;
-    margin-left: 5px;
-    transform: rotate(90deg);
-}
 
 .flecheDroite {
     display: block;
