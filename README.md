@@ -1,2 +1,5 @@
-# AssistanteNumerique
+# MINIFIER LES FICHIER
+
+    CM D + MAJ + P
+    PUIS ENTREE
  
