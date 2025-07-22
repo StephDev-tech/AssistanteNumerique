@@ -1,7 +1,7 @@
 <template>
     <h2> Mon comparateur personnalisé </h2>
     <!-- je créer un input pour récupérer la valeur de l'utilisateur -->
-    <input v-model="userInput" placeholder="Entrez une valeur" />
+    <input v-model="userInput" placeholder="Entrez une valeur" @keyup.enter="openInNewWindow(userInput)"/>
     <!-- je créer une div qui disparait au bout de 15 secondes-->
     <p v-if="limitedTime">Les résultats s'afficheront ici pendant {{ remainingTime }} secondes.</p>    
     <p v-else>Les résultats ne sont plus disponibles. Afin d'éviter les requêtes excessives, veuillez réessayer plus tard.</p>
@@ -34,9 +34,9 @@
     <p>Pour contourner ce problème, j'ai créé un bouton qui ouvre les résultats dans deux nouvelles fenêtres. 
     <br />J'y ai par ailleurs ajouter mes filtres préférés afin de trier les articles par ordre de prix croissant.
     <br> Je vous laisser tester!</p>
-    <!-- je créer un bouton pour ouvrir les résultats dans deux nouvelles fenêtres -->
+    <!-- je créer un bouton pour ouvrir les résultats dans deux nouvelles fenêtres  -->
+    <button @click="openInNewWindow(userInput)" >Ouvrir dans deux nouvelles fenêtres en 1 click</button>
 
-    <button @click="openInNewWindow(userInput)">Ouvrir dans deux nouvelles fenêtres en 1 click</button>
     <p><i>Petite astuce: vous pouvez fermer l'onglet actif avec le raccourci Ctrl + W (Cmd + W sur Mac)</i></p>
 
 </template>
@@ -60,9 +60,14 @@ setTimeout(() => {
 }, 15000)
 
 function openInNewWindow(input) {
+  // je créer les urls dynamiquement en fonction de l'input de l'utilisateur  
   const url1 = `https://fd15-courses.leclercdrive.fr/magasin-974601-974601-Le-Lamentin/recherche.aspx?TexteRecherche=${encodeURIComponent(input)}&tri=4`
   const url2 = `https://martinique.123-click.com/?q=${encodeURIComponent(input)}&or=min_price%20ASC`
+  // je créer une troisième url qui dirige vers la version mobile de leclerc
+  const url3 = `https://m-courses.leclercdrive.fr/magasin-974601/recherche/${encodeURIComponent(input)}?tri=4`
 
+
+  // je créer une fonction pour ouvrir les urls dans deux nouvelles fenêtres
   const createAndClickLink = (url) => {
     const link = document.createElement('a')
     link.href = url
@@ -75,7 +80,12 @@ function openInNewWindow(input) {
 
   createAndClickLink(url2)
    setTimeout(() => {
-    createAndClickLink(url1)
+    //selon la taille de l'écran, j'ouvre la version mobile de leclerc
+    if (window.innerWidth <= 768) {
+      createAndClickLink(url3)
+    } else {
+      createAndClickLink(url1)
+    }
   }, 1000)
 }
 
