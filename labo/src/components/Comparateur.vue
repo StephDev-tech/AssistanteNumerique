@@ -44,9 +44,7 @@
 <script setup>
 import { ref } from 'vue'
 
-
 const userInput = ref('')
-
 // je créer une variable pour afficher le temps restant
 const remainingTime = ref(15)
 setInterval(() => {
