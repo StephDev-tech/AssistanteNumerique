@@ -1,7 +1,11 @@
 <template>
-    <h2> Mon comparateur personnalisé </h2>
+  
+    <h2> Mon comparateur personnalisé - juillet 2025</h2>
     <!-- je créer un input pour récupérer la valeur de l'utilisateur -->
     <input v-model="userInput" placeholder="Entrez une valeur" @keyup.enter="openInNewWindow(userInput)"/>
+
+    <!-- je créer un bouton pour ouvrir les résultats dans deux nouvelles fenêtres  -->
+    <button @click="openInNewWindow(userInput)" >Ouvrir dans deux nouvelles fenêtres en 1 click</button>
     <!-- je créer une div qui disparait au bout de 15 secondes-->
     <p v-if="limitedTime">Les résultats s'afficheront ici pendant {{ remainingTime }} secondes.</p>    
     <p v-else>Les résultats ne sont plus disponibles. Afin d'éviter les requêtes excessives, veuillez réessayer plus tard.</p>
@@ -10,35 +14,69 @@
         <iframe class="site" :src="`https://fd15-courses.leclercdrive.fr/magasin-974601-974601-Le-Lamentin/recherche.aspx?TexteRecherche=${userInput}`" frameborder="0"></iframe>
         <iframe class="site" :src="`https://martinique.123-click.com/?q=${userInput}`" frameborder="0"></iframe>
     </div>
+
+<div class="explications">
+
+
     <h2>Explications et solutions alternatives</h2>
-    <!-- j'explique ce qui n'a pas fonctionné dans un paragraphe-->
+
     <p>
-  Si les résultats ne s'affichent pas correctement, cela peut être dû à des restrictions imposées par certains sites web concernant l'affichage de leur contenu.
-  <br />
-  C'est notamment le cas du site de Leclerc, qui utilise un système de sécurité empêchant l'intégration de ses pages dans des <code>iframe</code>.
-  <br />
-  <strong>Avantages :</strong>
-  <br />
-  - Ce système protège les données sensibles des utilisateurs contre des attaques malveillantes, en particulier le <em>clickjacking</em>. Le clickjacking consiste à superposer une interface invisible ou trompeuse au-dessus d'une page web, incitant l'utilisateur à cliquer sur quelque chose qu'il ne voit pas, à son insu.
-  <br />
-  - Il empêche aussi le vol de contenu et limite les tentatives de chargement du site dans des environnements non contrôlés, renforçant ainsi la sécurité globale de la navigation.
-  <br />
-  <strong>Inconvénients :</strong>
-  <br />
-  - Ce blocage rend impossible l'affichage du site dans une interface externe (comme un agrégateur ou une plateforme centralisée), ce qui peut nuire à l'expérience utilisateur si l’objectif est de proposer une navigation simplifiée regroupant plusieurs sites.
-  <br />
-  - Il limite l'interopérabilité entre services, en empêchant certaines intégrations ou automatisations pourtant utiles dans des contextes commerciaux ou informatifs.
-</p>
+      Si les résultats ne s'affichent pas correctement, cela peut être dû aux restrictions mises en place par certains sites web pour empêcher leur affichage dans des <em>iframes</em>.<br />
+      C’est notamment le cas du site de <strong>Leclerc</strong>, qui utilise une politique de sécurité stricte pour protéger ses pages.
+    </p>
 
+    <section>
+      <h2>🔒 Pourquoi cette protection ?</h2>
+      <ul>
+        <li>
+          Il bloque les attaques de <strong>clickjacking</strong>, une technique qui consiste à piéger les utilisateurs en superposant une interface invisible sur une page.
+        </li>
+        <li>
+          Il empêche le <strong>vol de contenu</strong> et limite l’intégration dans des plateformes tierces non autorisées.
+        </li>
+      </ul>
+    </section>
 
-    <p>Pour contourner ce problème, j'ai créé un bouton qui ouvre les résultats dans deux nouvelles fenêtres. 
-    <br />J'y ai par ailleurs ajouter mes filtres préférés afin de trier les articles par ordre de prix croissant.
-    <br> Je vous laisser tester!</p>
-    <!-- je créer un bouton pour ouvrir les résultats dans deux nouvelles fenêtres  -->
-    <button @click="openInNewWindow(userInput)" >Ouvrir dans deux nouvelles fenêtres en 1 click</button>
+    <section>
+      <h2>⚠️ Limites de ce système</h2>
+      <ul>
+        <li>Le contenu ne peut pas être affiché dans une interface externe (comme un agrégateur ou une application centralisée).</li>
+        <li>Cela réduit l’interopérabilité avec d’autres services ou outils de comparaison.</li>
+      </ul>
+    </section>
 
-    <p><i>Petite astuce: vous pouvez fermer l'onglet actif avec le raccourci Ctrl + W (Cmd + W sur Mac)</i></p>
+<section>
+      <h2>💡 Solution proposée</h2>
+      <p>
+        Pour contourner cette restriction, j’ai mis en place un <strong>bouton qui ouvre les résultats dans deux nouvelles fenêtres</strong>.<br />
+        Vous pouvez aussi simplement appuyer sur Entrée pour lancer la recherche.
+      </p>
+       <p>
+        🔎 J’y ai également ajouté mes <strong>filtres préférés</strong>, avec un tri par <strong>prix croissant</strong> pour faciliter la comparaison.
+      </p>
+    </section>
+    <section>
+      <h2>🧪 Retour d’expérience</h2>
+      <p>
+        J’ai constaté que l’ouverture des résultats dans des fenêtres séparées <strong>ne permet pas une comparaison côte à côte idéale</strong>.<br />
+        Cependant, cette solution offre l’avantage de :
+      </p>
+      <ul>
+        <li>Garder les résultats ouverts pendant que vous explorez d’autres options.</li>
+        <li>Simplifier la navigation si vous souhaitez consulter plusieurs sites rapidement.</li>
+      </ul>
+      <p>
+        💼 C’est particulièrement utile, par exemple, pour préparer les achats de la <strong>rentrée scolaire</strong>.
+      </p>
+    </section>
 
+    <section>
+      <h2>🖱️ Astuce rapide</h2>
+      <p>
+        Fermez un onglet actif avec <strong>Ctrl + W</strong> (ou <strong>Cmd + W</strong> sur Mac) pour garder votre navigation fluide.
+      </p>
+    </section>
+    </div>
 </template>
 
 <script setup>
@@ -100,4 +138,32 @@ function openInNewWindow(input) {
   width: 48%;
   height: 600px;
 }
+.explications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+/* je créer un style qui fusionne l'input et le bouton */
+input, button {
+  width: 50%;
+  padding: 10px;    
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4943e8;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #605ce5;
+}
+
 </style>
