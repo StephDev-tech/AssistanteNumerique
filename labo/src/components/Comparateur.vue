@@ -1,6 +1,6 @@
 <template>
   
-    <h2> Mon comparateur personnalisé - juillet 2025</h2>
+    <h2> Mon comparateur de courses personnalisé - juillet 2025</h2>
     <!-- je créer un input pour récupérer la valeur de l'utilisateur -->
     <input v-model="userInput" placeholder="Entrez une valeur" @keyup.enter="openInNewWindow(userInput)"/>
 
@@ -18,26 +18,30 @@
 <div class="explications">
 
 
-    <h2>Explications et solutions alternatives</h2>
+    <h2>🔍 La genèse</h2>
+  <p>
+    En tant que développeuse, j’ai voulu créer une interface de comparaison de produits entre deux grandes plateformes : 
+    <strong>Leclerc</strong> et <strong>123CLICK</strong>. Mon idée initiale était d’intégrer les deux sites dans ma propre application 
+    à l’aide d'un procédé <strong>micro-frontends via des iframes</strong>, pour offrir une expérience utilisateur fluide et centralisée.
+  </p>
 
-    <p>
-      Si les résultats ne s'affichent pas correctement, cela peut être dû aux restrictions mises en place par certains sites web pour empêcher leur affichage dans des <em>iframes</em>.<br />
-      C’est notamment le cas du site de <strong>Leclerc</strong>, qui utilise une politique de sécurité stricte pour protéger ses pages.
-    </p>
-
+  <p>
+    Ayant constaté que 123CLICK ne propose pas encore de tri dynamique des articles recherchés, ce qui complique la comparaison directe.   
+    J’ai aussi rapidement été confrontée à des <strong>restrictions de sécurité</strong> sur le site de Leclerc, qui empêchent l’affichage de leurs pages dans des iframes externes.
+  </p>
     <section>
-      <h2>🔒 Pourquoi cette protection ?</h2>
+      <h2>🔒 Pourquoi ces restrictions ?</h2>
       <ul>
         <li>
-          Il bloque les attaques de <strong>clickjacking</strong>, une technique qui consiste à piéger les utilisateurs en superposant une interface invisible sur une page.
+          Ils bloquent les attaques de <strong>clickjacking</strong>, une technique qui consiste à piéger les utilisateurs en superposant une interface invisible sur une page.
         </li>
         <li>
-          Il empêche le <strong>vol de contenu</strong> et limite l’intégration dans des plateformes tierces non autorisées.
+          Ils empêchent le <strong>vol de contenu</strong> et limitent l’intégration dans des plateformes tierces non autorisées.
         </li>
       </ul>
     </section>
 
-    <section>
+    <section >
       <h2>⚠️ Limites de ce système</h2>
       <ul>
         <li>Le contenu ne peut pas être affiché dans une interface externe (comme un agrégateur ou une application centralisée).</li>
@@ -46,14 +50,16 @@
     </section>
 
 <section>
-      <h2>💡 Solution proposée</h2>
-      <p>
-        Pour contourner cette restriction, j’ai mis en place un <strong>bouton qui ouvre les résultats dans deux nouvelles fenêtres</strong>.<br />
-        Vous pouvez aussi simplement appuyer sur Entrée pour lancer la recherche.
-      </p>
-       <p>
-        🔎 J’y ai également ajouté mes <strong>filtres préférés</strong>, avec un tri par <strong>prix croissant</strong> pour faciliter la comparaison.
-      </p>
+     <h2>💡 Ma solution temporaire</h2>
+  <p>
+    Pour contourner ces limites et continuer mes tests, j’ai conçu une <strong>solution d’attente</strong> :
+  </p>
+  <ul>
+    <li>Un <strong>bouton</strong> qui ouvre les deux sites dans des onglets séparés</li>
+    <li>Des <strong>filtres personnalisés</strong> automatiquement appliqués sur 123CLICK (tri par prix)</li>
+  </ul>
+      <p>En somme un environnement de test qui illustre concrètement la capacité du développement web à répondre à des besoins du quotidien.</p>
+
     </section>
     <section>
       <h2>🧪 Retour d’expérience</h2>
@@ -68,6 +74,7 @@
       <p>
         💼 C’est particulièrement utile, par exemple, pour préparer les achats de la <strong>rentrée scolaire</strong>.
       </p>
+      
     </section>
 
     <section>
@@ -76,6 +83,16 @@
         Fermez un onglet actif avec <strong>Ctrl + W</strong> (ou <strong>Cmd + W</strong> sur Mac) pour garder votre navigation fluide.
       </p>
     </section>
+
+    <section class="etat-test">
+      <h2><strong>État du test :</strong></h2>
+    <p> Recherche et Développement. Objectif : trouver une solution orientée UX.</p>
+  <p>Merci de votre compréhension et de votre patience pendant que j’explore les meilleures options !</p>
+  <p>Pour toute question ou suggestion, n’hésitez pas à me contacter.</p>
+  <p>Bonne navigation !</p>
+    </section>
+
+
     </div>
 </template>
 
@@ -134,9 +151,25 @@ function openInNewWindow(input) {
   display: flex;
   justify-content: space-between;
 }
+
 .site {
   width: 48%;
   height: 600px;
+}
+/* je créer un style pour les écrans mobiles */
+@media (max-width: 768px) {
+  .site-a-comparer {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .site {
+  width: 90%;
+  height: 600px;
+  margin-bottom: 20px;
+  
+}
 }
 .explications {
   display: flex;
@@ -164,6 +197,11 @@ button {
 }
 button:hover {
   background-color: #605ce5;
+}
+.etat-test {
+ color:rgb(111, 111, 111);
+   font-style: italic;
+
 }
 
 </style>
