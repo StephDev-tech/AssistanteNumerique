@@ -270,13 +270,15 @@ body {
 
 .profile {
     min-height: 800px;
-    width: 100vw;
+    width: 90vw;
     margin: 0%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .photoprofile {
@@ -943,6 +945,9 @@ body {
     width: 95%;
     height: 70%;
     text-decoration: none;
+}
+.listLienProjet{
+    color: white;
 }
 
 .SuivrelienProjet {
